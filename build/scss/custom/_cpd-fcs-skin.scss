@@ -1,0 +1,8 @@
+// Bootstrap
+// ---------------------------------------------------
+@import '~bootstrap/scss/functions';
+@import '../bootstrap-variables';
+// Custom Theme Color START
+$primary: #00FF00 !default;
+$theme-colors: map-merge(( "primary": $primary), $theme-colors);
+// Custom Theme Color END
