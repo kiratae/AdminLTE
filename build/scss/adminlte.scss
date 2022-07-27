@@ -9,9 +9,10 @@
 // ---------------------------------------------------
 @import "~bootstrap/scss/functions";
 @import "bootstrap-variables";
+
+@import "custom/ibsl-theme";
+
 @import "~bootstrap/scss/bootstrap";
-// Custom Style
-@import "custom/cpd-fcs-skin";
 // Variables and Mixins
 // ---------------------------------------------------
 @import "variables";
