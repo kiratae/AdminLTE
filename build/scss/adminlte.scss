@@ -24,3 +24,101 @@
 @import "parts/pages";
 @import "parts/plugins";
 @import "parts/miscellaneous";
+
+// Show menu items on hover
+.sidebar-mini.sidebar-collapse {
+  @include media-breakpoint-up(sm) {
+    //Make the sidebar links, menus, labels, badges
+    //and angle icons disappear
+    .nav-sidebar > li > a > p,
+    .nav-sidebar > li > .nav-treeview,
+    .nav-sidebar > li > a > .right,
+    .nav-sidebar > li > a > p > .right,
+    .nav-sidebar li.nav-header {
+      display: none !important;
+    }
+
+    .nav-sidebar > li:hover {
+      position: relative;
+      overflow: visible;
+      height: auto;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      > a > p,
+      > .nav-treeview {
+        display: block !important;
+        position: absolute !important;
+        width: $sidebar-width - 50 !important;
+        left: 50px !important;
+        visibility: visible !important;
+      }
+      //position the header & treeview menus
+      > a > p {
+        top: 0;
+        margin-left: -3px;
+        padding: 12px 5px 12px 20px;
+        background-color: inherit;
+      }
+      > a > .right {
+        //display: block!important;
+        position: relative !important;
+        float: right;
+        width: auto !important;
+        left: 200px - 20px !important;
+        top: -22px !important;
+        z-index: 900;
+        > .label:not(:first-of-type) {
+          display: none;
+        }
+      }
+      > .nav-treeview {
+        top: 44px !important;
+        margin-left: 0 !important;
+      }
+    }
+  }
+}
+
+//A fix for text overflow while transitioning from sidebar mini to full sidebar
+.nav-sidebar,
+.nav-sidebar > li.nav-header {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.nav-sidebar:hover {
+  overflow: visible;
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar{
+  overflow-x: visible !important;
+}
+
+.nav-sidebar > li.nav-header {
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.nav-sidebar li > a {
+  position: relative;
+  > .right {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -7px;
+  }
+}
+
+.main-sidebar {
+  overflow-x: visible !important;
+  .sidebar {
+    overflow-x: visible !important;
+    .os-padding {
+      overflow-x: visible !important;
+      .os-viewport {
+        overflow-x: visible !important;
+      }
+    }
+  }
+}
+

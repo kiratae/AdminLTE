@@ -16,104 +16,27 @@
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
 
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed sidebar-collapse">
     <!-- Site wrapper -->
     <div class="wrapper">
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light border-grey">
             <!-- Left navbar links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../../index3.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Contact</a>
+                    <span class="we-app-name">ระบบฐานข้อมูลการประกันชีวิต<br/>สำหรับสำนักงานคณะกรรมการกำกับและส่งแสริมการประกอบธุรกิจประกันภัย</span>
                 </li>
             </ul>
 
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
-                <!-- Navbar Search -->
                 <li class="nav-item">
-                    <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-                        <i class="fas fa-search"></i>
-                    </a>
-                    <div class="navbar-search-block">
-                        <form class="form-inline">
-                            <div class="input-group input-group-sm">
-                                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-                                <div class="input-group-append">
-                                    <button class="btn btn-navbar" type="submit">
-                  <i class="fas fa-search"></i>
-                </button>
-                                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
-                  <i class="fas fa-times"></i>
-                </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </li>
-
-                <!-- Messages Dropdown Menu -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#">
-                        <i class="far fa-comments"></i>
-                        <span class="badge badge-danger navbar-badge">3</span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                        <a href="#" class="dropdown-item">
-                            <!-- Message Start -->
-                            <div class="media">
-                                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-                                <div class="media-body">
-                                    <h3 class="dropdown-item-title">
-                                        Brad Diesel
-                                        <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-                                    </h3>
-                                    <p class="text-sm">Call me whenever you can...</p>
-                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-                                </div>
-                            </div>
-                            <!-- Message End -->
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <!-- Message Start -->
-                            <div class="media">
-                                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-                                <div class="media-body">
-                                    <h3 class="dropdown-item-title">
-                                        John Pierce
-                                        <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
-                                    </h3>
-                                    <p class="text-sm">I got your message bro</p>
-                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-                                </div>
-                            </div>
-                            <!-- Message End -->
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <!-- Message Start -->
-                            <div class="media">
-                                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-                                <div class="media-body">
-                                    <h3 class="dropdown-item-title">
-                                        Nora Silvester
-                                        <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                                    </h3>
-                                    <p class="text-sm">The subject goes here</p>
-                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-                                </div>
-                            </div>
-                            <!-- Message End -->
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+                    <div class="switch-lang col-auto mr-2 px-0">
+                        <a class="header-btn switch-lang-btn active" role="button" id="th"><span>TH</span></a>
+                        <a class="header-btn switch-lang-btn" role="button" id="en"><span>EN</span></a>
                     </div>
                 </li>
                 <!-- Notifications Dropdown Menu -->
@@ -144,50 +67,36 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-                        <i class="fas fa-expand-arrows-alt"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-                        <i class="fas fa-th-large"></i>
-                    </a>
+                    <div class="dropdown">
+                        <a class="btn-user-man nav-link d-inline-flex align-items-center p-1" href="#" id="navbar-supported-content" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="user-profile mr-2">
+                                <img src="../../dist/img/avatar.png" class="img-profile" width="32" height="32" />
+                            </span>
+                            <div>
+                                <p class="name m-0">User A</p>
+                                <p class="role m-0">Admin</p>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right mt-2" aria-labelledby="navbar-supported-content">
+                            <a class="dropdown-item" href="#">Edit Account</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Log Out</a>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </nav>
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <aside class="main-sidebar sidebar-light-primary sidebar-no-expand">
             <!-- Brand Logo -->
-            <a href="../../index3.html" class="brand-link">
-                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">AdminLTE 3</span>
-            </a>
+            <div class="navbar-brand bg-white border-grey">
+                <img src="../../dist/img/oic_bo_img_logo1.png" alt="Oic Ibsl Logo" width="40" height="40" class="brand-image">
+            </div>
 
             <!-- Sidebar -->
             <div class="sidebar">
-                <!-- Sidebar user (optional) -->
-                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                    <div class="image">
-                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-                    </div>
-                    <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
-                    </div>
-                </div>
-
-                <!-- SidebarSearch Form -->
-                <div class="form-inline">
-                    <div class="input-group" data-widget="sidebar-search">
-                        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-                        <div class="input-group-append">
-                            <button class="btn btn-sidebar">
-              <i class="fas fa-search fa-fw"></i>
-            </button>
-                        </div>
-                    </div>
-                </div>
 
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
@@ -211,14 +120,12 @@
                                 </li>
                                 <li class="nav-item">
                                     <a href="../../index2.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Dashboard v2</p>
+                                        Dashboard v2
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="../../index3.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Dashboard v3</p>
+                                        Dashboard v3
                                     </a>
                                 </li>
                             </ul>
@@ -850,10 +757,7 @@
             <section class="content-header">
                 <div class="container-fluid">
                     <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h1>Fixed Layout</h1>
-                        </div>
-                        <div class="col-sm-6">
+                        <div class="col-auto">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                                 <li class="breadcrumb-item"><a href="#">Layout</a></li>
@@ -886,7 +790,25 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    Start creating your amazing application!
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non ipsum eget dolor auctor sollicitudin non a ligula. Integer porta ipsum commodo eleifend ultrices. Sed tincidunt, est eu ultrices sodales, eros ligula porta ligula, at maximus felis justo et lectus. Pellentesque semper mollis mi consequat viverra. Donec in sem iaculis, interdum nisi quis, cursus sapien. Morbi ut vulputate ex. Morbi fermentum dolor a hendrerit dapibus. Pellentesque posuere dolor vitae turpis varius facilisis. Fusce ac elit ut metus convallis suscipit sed non felis.
+
+Proin condimentum leo sed ante mollis mattis. Praesent sit amet dolor eget mi bibendum pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum augue orci, eget congue justo mattis eu. Vivamus luctus dignissim libero, quis semper justo interdum et. Nulla lectus sem, venenatis id commodo eget, aliquam et erat. Pellentesque augue dui, dapibus at ornare sed, interdum nec felis. Duis pharetra, erat eu pellentesque elementum, lacus velit euismod orci, vitae efficitur diam lectus sit amet mi. Quisque vulputate ipsum a pellentesque tempor.
+
+Aliquam eu faucibus libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus tellus purus, euismod nec felis sollicitudin, accumsan vestibulum nunc. Integer feugiat, elit et elementum pharetra, nisi quam congue purus, a scelerisque mi ligula id urna. Donec vel volutpat enim. Nulla at odio condimentum, vestibulum erat nec, porttitor enim. Suspendisse sollicitudin sit amet urna eget commodo. Curabitur ullamcorper nulla eget est malesuada hendrerit. Vivamus tempus suscipit mauris et dignissim.
+
+Nullam placerat sodales est, sit amet hendrerit purus interdum ac. Integer eleifend sollicitudin imperdiet. Maecenas consectetur ex leo, sollicitudin fringilla purus ultricies et. Phasellus odio quam, dapibus et ullamcorper eu, facilisis ut elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam varius augue id ligula iaculis fringilla. Nullam pharetra scelerisque consectetur. Fusce euismod sodales accumsan. Aliquam at ante vel quam laoreet tincidunt non et sapien. Donec varius lorem nunc, vitae rhoncus ante molestie quis. Phasellus non ultrices neque. Curabitur diam urna, aliquam et turpis eleifend, convallis fringilla lorem. Curabitur pellentesque ligula in facilisis fringilla. Donec vitae accumsan libero.
+
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec augue erat, tincidunt sed auctor eget, accumsan a purus. Mauris maximus massa sit amet elementum feugiat. Donec cursus purus ornare, facilisis felis et, vehicula enim. Integer eget metus tristique lectus eleifend accumsan. Morbi auctor ornare orci, in euismod orci aliquet ut. Maecenas lacinia sed est nec ullamcorper. Aliquam eu sagittis mauris.
+
+Integer dignissim arcu mauris, vitae viverra erat fermentum eget. Curabitur blandit justo in tortor vestibulum fringilla. Aenean felis leo, tempus in enim in, elementum volutpat tellus. Pellentesque tellus mi, interdum non fermentum vel, accumsan ac mi. Donec dignissim diam odio, ac aliquam diam feugiat ut. In tortor justo, ultricies sagittis tellus eget, ultrices condimentum tortor. Sed scelerisque tincidunt nisl nec pretium. Ut luctus ex ac eros viverra, sed ultricies tellus hendrerit. Suspendisse rhoncus metus at justo imperdiet elementum. Donec posuere, sem fringilla ultrices congue, ante tortor scelerisque lacus, vitae bibendum ipsum lorem a dui. Morbi magna lorem, consequat et eleifend vel, vulputate non leo.
+
+Quisque consectetur dapibus odio et malesuada. Nam a sapien at leo lacinia consequat sed ac ex. Nullam mollis magna nibh, et lobortis dolor tincidunt id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent iaculis justo sed mi vestibulum sagittis. Sed ut quam ipsum. Sed vitae nibh et ipsum dictum iaculis. Vivamus eget quam eget sapien bibendum tempus vel ut nisi. Vestibulum in auctor lectus. Nulla eleifend congue tortor. Vivamus ultricies augue felis, a sagittis ex eleifend ac. Donec pellentesque ornare fringilla. Nulla consectetur, libero sed faucibus consectetur, dui dolor lacinia urna, a gravida leo sem sit amet metus.
+
+Nulla facilisi. Phasellus auctor interdum metus, non congue risus semper et. Nullam at nisl eu tellus convallis scelerisque vel in lorem. Duis eget fermentum odio. Donec non quam sollicitudin risus euismod dapibus a vel dolor. Nunc viverra elit sodales arcu consectetur, vel venenatis metus rhoncus. Donec volutpat, urna eget ornare euismod, dolor odio pretium justo, quis volutpat ex odio a justo. Sed congue condimentum dolor, quis sodales quam consequat non. Etiam pharetra velit lorem, in dictum velit vehicula eu. Sed ut turpis posuere, pharetra urna in, scelerisque turpis. Maecenas pretium suscipit urna sit amet fermentum. Nunc ac vehicula lectus. Sed sed interdum massa. Donec porttitor viverra sodales. Aliquam nec dui ac lectus lacinia iaculis.
+
+Curabitur faucibus sem mauris, vitae placerat nisl varius id. Vivamus sit amet enim dictum, pretium enim quis, blandit leo. Sed consectetur, tellus nec feugiat dapibus, dui tellus faucibus risus, non fringilla mi turpis vitae ex. Sed in porttitor libero. Fusce non placerat neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla ultricies porttitor laoreet. Aenean nunc ex, blandit vel tincidunt sed, malesuada et nibh. Integer congue placerat elit dapibus luctus.
+
+Etiam eu urna massa. Donec vitae ornare nisi. Nullam ac nisi in nunc cursus imperdiet et at felis. Curabitur ornare scelerisque tristique. Vestibulum mollis, velit sed faucibus bibendum, est neque porta ex, vitae eleifend tortor lacus ac nunc. Nam non risus ut mi cursus dictum molestie sit amet risus. Integer tincidunt et velit nec volutpat. Quisque tempus rutrum tortor, at malesuada eros eleifend vehicula. Fusce hendrerit ac est et ultrices. Nunc hendrerit maximus nisl sit amet porta. Vestibulum tempor augue nec consequat convallis. Nulla fringilla ultricies libero, ut sagittis erat euismod sed.
                                 </div>
                                 <!-- /.card-body -->
                                 <div class="card-footer">
@@ -928,6 +850,12 @@
     <script src="../../dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="../../dist/js/demo.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            
+        });
+    </script>
 </body>
 
 </html>

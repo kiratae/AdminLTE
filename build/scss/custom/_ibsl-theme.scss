@@ -1,5 +1,6 @@
 // Your variable overrides
 $primary: #104e8e;
+$primary-lighten: #f4f8f8;
 $secondary: #fbc235;
 
 // Sidebar
@@ -18,9 +19,13 @@ $sidebar-light-submenu-hover-bg: $sidebar-light-hover-bg;
 $sidebar-light-submenu-active-color: $white;
 $sidebar-light-submenu-active-bg: #1975d6;
 
+// $sidebar-mini-width: 5rem;
+// $sidebar-nav-icon-width: 4rem;
+
 $nav-pills-border-radius: 0;
 
 $theme-colors: (
+  "primary-lighten": $primary-lighten,
   "custom-color": #900
 );
 
@@ -30,5 +35,143 @@ $theme-colors: (
     border-left: .25rem solid $secondary;
     padding-left: calc(1rem - .25rem) !important;
   }
+}
+
+.navbar-brand {
+  display: flex !important;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: .75rem .5rem !important;
+}
+
+.we-app-name {
+  font-weight: 600;
+  color: $gray-900;
+  font-size: 14px !important;
+}
+
+.main-header {
+  .header-btn {
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 2px;
+    outline: none;
+    transition: color 200ms cubic-bezier(.4, 0, .2, 1), background-color 200ms cubic-bezier(.4, 0, .2, 1), box-shadow 400ms cubic-bezier(.4, 0, .2, 1);
+    border-radius: 50%;
+    min-width: 0;
+    overflow: visible;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    position: relative;
+    vertical-align: top;
+    color: #a6afb1;
+    :hover {
+      background-color: #f4f8f8;
+    }
+    .header-btn-icon {
+      font-size: 18px;
+      left: 50%;
+      line-height: 0;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .switch-lang {
+    border: 1px solid #e5ebeb;
+    border-radius: 2em;
+    padding: .25em;
+    .switch-lang-btn {
+      color: $primary;
+      height: 32px;
+      width: 32px;
+      &.active{
+        color: $secondary;
+        background-color: $primary;
+        :hover {
+          color: $secondary;
+          background-color: $primary;
+        }
+      }
+      :hover {
+        background-color: $primary-lighten;
+        color: $primary;
+      }
+      span {
+        font-size: 14px;
+        font-weight: 600;
+        left: 50%;
+        line-height: 0;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  #navbar-supported-content {
+    &.btn-user-man {
+      border: 1px solid #e5ebeb !important;
+      border-radius: 20px !important;
+      min-width: 185px !important;
+      .user-profile{
+        .img-profile {
+          object-fit: cover;
+          border-radius: 50% !important;
+          background-color: #fff;
+        }
+      }
+      .name {
+        font-size: 10px;
+        color: #3c4142;
+        font-weight: 500;
+      }
+      .role {
+        font-size: 10px;
+        color: #0f4d8e;
+        font-weight: 400;
+      }
+      &[aria-expanded="true"] {
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        border-bottom: 0 !important;
+      }
+      +.dropdown-menu {
+        border-radius: 0;
+        border: 1px solid #e5ebeb;
+        width: 100%;
+        margin-right: 0;
+        margin-top: -1px !important;
+        border-top: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 5px;
+        box-shadow: none !important;
+        .dropdown-divider {
+          margin: 5px 0;
+        }
+        .dropdown-item {
+          font-size: 12px;
+          color: $gray-900 !important;
+          padding: 8px 20px;
+          border-radius: 10px;
+          font-weight: 500;
+          :hover {
+            background-color: $primary-lighten;
+            color: $primary !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.layout-navbar-fixed.layout-fixed .wrapper .sidebar {
+  margin-top: 0 !important;
 }
 
