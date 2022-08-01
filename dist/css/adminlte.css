@@ -10,20 +10,6 @@
   padding-left: calc(1rem - .25rem) !important;
 }
 
-.navbar-brand {
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -ms-flex: 1;
-  flex: 1;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100% !important;
-  margin: 0 !important;
-  padding: .75rem .5rem !important;
-}
-
 .we-app-name {
   font-weight: 600;
   color: #212529;
@@ -13321,7 +13307,7 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 }
 
 [class*="sidebar-light-"] .nav-sidebar > .nav-item > .nav-treeview {
-  background-color: transparent;
+  background-color: #104e8e;
 }
 
 [class*="sidebar-light-"] .nav-header {
@@ -54992,28 +54978,49 @@ a.text-muted:hover {
   .sidebar-mini.sidebar-collapse .nav-sidebar li.nav-header {
     display: none !important;
   }
-  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover {
-    position: relative;
-    overflow: visible;
-    height: auto;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-  }
   .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > a > p,
   .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview {
     display: block !important;
     position: absolute !important;
-    width: 200px !important;
-    left: 50px !important;
+    width: 250px !important;
+    left: 3.62rem !important;
+    margin-left: 0 !important;
+    visibility: visible !important;
+  }
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > a > p .nav-item a,
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview .nav-item a {
+    width: 100%;
+  }
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > a > p .nav-item p,
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview .nav-item p {
+    margin-left: 0 !important;
     visibility: visible !important;
   }
   .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > a > p {
-    top: 0;
-    margin-left: -3px;
-    padding: 12px 5px 12px 20px;
+    top: 0 !important;
+    padding: .5rem 1rem;
     background-color: inherit;
+    -webkit-animation-name: unset !important;
+    animation-name: unset !important;
+    -webkit-animation-duration: unset !important;
+    animation-duration: unset !important;
+    -webkit-animation-fill-mode: unset !important;
+    animation-fill-mode: unset !important;
+    margin-left: 0 !important;
   }
-  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > a > .right {
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover .nav-link.active p {
+    margin-left: -.25rem !important;
+  }
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover .nav-link p {
+    -webkit-animation-name: unset !important;
+    animation-name: unset !important;
+    -webkit-animation-duration: unset !important;
+    animation-duration: unset !important;
+    -webkit-animation-fill-mode: unset !important;
+    animation-fill-mode: unset !important;
+    margin-left: 0 !important;
+  }
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > a > p > .right {
     position: relative !important;
     float: right;
     width: auto !important;
@@ -55021,58 +55028,34 @@ a.text-muted:hover {
     top: -22px !important;
     z-index: 900;
   }
-  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > a > .right > .label:not(:first-of-type) {
-    display: none;
-  }
   .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview {
-    top: 44px !important;
+    overflow: visible !important;
     margin-left: 0 !important;
   }
+  .sidebar-mini.sidebar-collapse .main-header {
+    margin-left: 0 !important;
+  }
+  .sidebar-mini.sidebar-collapse .main-sidebar,
+  .sidebar-mini.sidebar-collapse .main-sidebar .sidebar {
+    overflow: visible !important;
+  }
 }
 
-.nav-sidebar,
-.nav-sidebar > li.nav-header {
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.nav-sidebar:hover {
-  overflow: visible;
-}
-
-.sidebar-mini.sidebar-collapse .main-sidebar {
-  overflow-x: visible !important;
-}
-
-.nav-sidebar > li.nav-header {
-  overflow: hidden;
-  text-overflow: clip;
-}
-
-.nav-sidebar li > a {
-  position: relative;
-}
-
-.nav-sidebar li > a > .right {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  margin-top: -7px;
+.main-header {
+  margin-left: 0 !important;
+  z-index: 1038 !important;
 }
 
 .main-sidebar {
-  overflow-x: visible !important;
+  top: 9px !important;
+  z-index: 1037 !important;
 }
 
-.main-sidebar .sidebar {
-  overflow-x: visible !important;
+.main-sidebar .nav-sidebar .nav-item > .nav-link {
+  margin-bottom: 0 !important;
 }
 
-.main-sidebar .sidebar .os-padding {
-  overflow-x: visible !important;
-}
-
-.main-sidebar .sidebar .os-padding .os-viewport {
-  overflow-x: visible !important;
+.main-sidebar .nav-sidebar .nav-item > .nav-link.active {
+  box-shadow: none !important;
 }
 /*# sourceMappingURL=adminlte.css.map */

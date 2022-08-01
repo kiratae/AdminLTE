@@ -12,7 +12,7 @@ $sidebar-light-hover-bg: #093c71;
 $sidebar-light-color: $white;
 $sidebar-light-hover-color: $white;
 $sidebar-light-active-color: $white;
-$sidebar-light-submenu-bg: transparent;
+$sidebar-light-submenu-bg: $primary;
 $sidebar-light-submenu-color: $white;
 $sidebar-light-submenu-hover-color: $white;
 $sidebar-light-submenu-hover-bg: $sidebar-light-hover-bg;
@@ -37,15 +37,15 @@ $theme-colors: (
   }
 }
 
-.navbar-brand {
-  display: flex !important;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  width: 100% !important;
-  margin: 0 !important;
-  padding: .75rem .5rem !important;
-}
+// .navbar-brand {
+//   display: flex !important;
+//   flex: 1;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100% !important;
+//   margin: 0 !important;
+//   padding: .75rem .5rem !important;
+// }
 
 .we-app-name {
   font-weight: 600;
