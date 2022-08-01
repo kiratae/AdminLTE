@@ -55049,6 +55049,7 @@ a.text-muted:hover {
 .main-sidebar {
   top: 9px !important;
   z-index: 1037 !important;
+  padding-bottom: 10rem !important;
 }
 
 .main-sidebar .nav-sidebar .nav-item > .nav-link {
