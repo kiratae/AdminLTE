@@ -1,0 +1,88 @@
+// Show menu items on hover
+.sidebar-mini.sidebar-collapse {
+  @include media-breakpoint-up(sm) {
+    //Make the sidebar links, menus, labels, badges
+    //and angle icons disappear
+    .nav-sidebar > li > a > p,
+    .nav-sidebar > li > .nav-treeview,
+    .nav-sidebar > li > a > .right,
+    .nav-sidebar > li > a > p > .right,
+    .nav-sidebar li.nav-header {
+      display: none !important;
+    }
+    .nav-sidebar > li:hover {
+      > a > p,
+      > .nav-treeview {
+        display: block !important;
+        position: absolute !important;
+        width: $sidebar-width !important;
+        left: $sidebar-mini-width !important;
+        margin-left: 0 !important;
+        visibility: visible !important;
+        .nav-item {
+          a {
+            width: 100%;
+          }
+          p {
+            margin-left: 0 !important;
+            visibility: visible !important;
+          }
+        }
+      }
+      > a > p {
+        top: 0 !important;
+        padding: .5rem 1rem;
+        background-color: inherit;
+        animation-name: unset !important;
+        animation-duration: unset !important;
+        animation-fill-mode: unset !important;
+        margin-left: 0 !important;
+      }
+      .nav-link {
+        p {
+          animation-name: unset !important;
+          animation-duration: unset !important;
+          animation-fill-mode: unset !important;
+          margin-left: 0 !important;
+        }
+        &.active p {
+          margin-left: -.25rem !important;
+        }
+      }
+      > a > p > .right {
+        position: relative !important;
+        float: right;
+        width: auto !important;
+        left: 200px - 20px !important;
+        top: -22px !important;
+        z-index: 900;
+      }
+      > .nav-treeview {
+        overflow: visible !important;
+        margin-left: 0 !important;
+      }
+    }
+    .main-header {
+      margin-left: 0 !important;
+    }
+    .main-sidebar,
+    .main-sidebar .sidebar {
+      overflow: visible !important;
+    }
+  }
+}
+.main-header {
+  margin-left: 0 !important;
+  z-index: 1038 !important;
+}
+.main-sidebar {
+  top: 9px !important;
+  z-index: 1037 !important;
+  .nav-sidebar .nav-item > .nav-link {
+    margin-bottom: 0 !important;
+    &.active {
+      box-shadow: none !important;
+    }
+  }
+}
+

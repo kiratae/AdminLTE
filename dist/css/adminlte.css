@@ -55008,9 +55008,6 @@ a.text-muted:hover {
     animation-fill-mode: unset !important;
     margin-left: 0 !important;
   }
-  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover .nav-link.active p {
-    margin-left: -.25rem !important;
-  }
   .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover .nav-link p {
     -webkit-animation-name: unset !important;
     animation-name: unset !important;
@@ -55019,6 +55016,9 @@ a.text-muted:hover {
     -webkit-animation-fill-mode: unset !important;
     animation-fill-mode: unset !important;
     margin-left: 0 !important;
+  }
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover .nav-link.active p {
+    margin-left: -.25rem !important;
   }
   .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > a > p > .right {
     position: relative !important;
