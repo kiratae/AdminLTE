@@ -22,10 +22,38 @@
         .nav-item {
           a {
             width: 100%;
+            .right {
+              display: none !important;
+            }
           }
           p {
             margin-left: 0 !important;
             visibility: visible !important;
+          }
+          &:hover {
+            color: $sidebar-light-submenu-hover-color !important;
+            background-color: lighten($sidebar-light-submenu-bg, 7) !important;
+            > .nav-treeview {
+              color: $sidebar-light-submenu-hover-color !important;
+              background-color: lighten($sidebar-light-submenu-bg, 7) !important;
+              display: block !important;
+              position: absolute !important;
+              width: $sidebar-width !important;
+              left: $sidebar-width !important;
+              margin-top: -40px !important;
+              margin-left: 0 !important;
+              visibility: visible !important;
+              .nav-item {
+                a {
+                  width: 100%;
+                }
+                p {
+                  margin-left: 0 !important;
+                  visibility: visible !important;
+                }
+              }
+
+            }
           }
         }
       }
@@ -78,7 +106,6 @@
 .main-sidebar {
   top: 9px !important;
   z-index: 1037 !important;
-  padding-bottom: 10rem !important;
   .nav-sidebar .nav-item > .nav-link {
     margin-bottom: 0 !important;
     &.active {

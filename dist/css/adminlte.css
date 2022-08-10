@@ -54991,8 +54991,38 @@ a.text-muted:hover {
   .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview .nav-item a {
     width: 100%;
   }
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > a > p .nav-item a .right,
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview .nav-item a .right {
+    display: none !important;
+  }
   .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > a > p .nav-item p,
   .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview .nav-item p {
+    margin-left: 0 !important;
+    visibility: visible !important;
+  }
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > a > p .nav-item:hover,
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview .nav-item:hover {
+    color: #fff !important;
+    background-color: #1460ae !important;
+  }
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > a > p .nav-item:hover > .nav-treeview,
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview .nav-item:hover > .nav-treeview {
+    color: #fff !important;
+    background-color: #1460ae !important;
+    display: block !important;
+    position: absolute !important;
+    width: 250px !important;
+    left: 250px !important;
+    margin-top: -40px !important;
+    margin-left: 0 !important;
+    visibility: visible !important;
+  }
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > a > p .nav-item:hover > .nav-treeview .nav-item a,
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview .nav-item:hover > .nav-treeview .nav-item a {
+    width: 100%;
+  }
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > a > p .nav-item:hover > .nav-treeview .nav-item p,
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview .nav-item:hover > .nav-treeview .nav-item p {
     margin-left: 0 !important;
     visibility: visible !important;
   }
@@ -55049,7 +55079,6 @@ a.text-muted:hover {
 .main-sidebar {
   top: 9px !important;
   z-index: 1037 !important;
-  padding-bottom: 10rem !important;
 }
 
 .main-sidebar .nav-sidebar .nav-item > .nav-link {
