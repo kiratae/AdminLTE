@@ -3,7 +3,49 @@
   @include media-breakpoint-up(sm) {
     //Make the sidebar links, menus, labels, badges
     //and angle icons disappear
-    .nav-sidebar > li > a > p,
+    .nav-sidebar > li {
+      height: 4.5rem;
+    }
+    .nav-sidebar > li > .nav-link {
+      padding: .5rem .25rem !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &.active {
+        padding-left: calc(.25rem - #{$sidebar-indicator-width}) !important;
+      }
+    }
+    .nav-sidebar > .nav-item {
+      .nav-icon {
+        margin-right: 0 !important;
+      }
+      > .nav-link > .nav-icon {
+        margin-bottom: .5rem !important;
+      }
+      > a {
+        text-align: center !important;
+        height: 4.5rem;
+      }
+    }
+    .nav-sidebar > li > a > p {
+      font-size: .75rem !important;
+      display: block !important;
+      text-overflow: ellipsis !important;
+      overflow-y: hidden !important;
+      word-wrap: break-word;
+      white-space: normal !important;
+      line-height: 1rem !important;
+      max-height: 2rem !important;
+      width: 100% !important;
+      margin: 0 !important;
+      text-align: center;
+      visibility: visible !important;
+      animation-name: unset !important;
+      animation-duration: unset !important;
+      animation-fill-mode: unset !important;
+    }
     .nav-sidebar > li > .nav-treeview,
     .nav-sidebar > li > a > .right,
     .nav-sidebar > li > a > p > .right,
@@ -11,25 +53,30 @@
       display: none !important;
     }
     .nav-sidebar > li:hover {
-      > a > p,
       > .nav-treeview {
+        overflow: visible !important;
         display: block !important;
         position: absolute !important;
         width: $sidebar-width !important;
         left: $sidebar-mini-width !important;
+        margin-top: $sidebar-level2-offset !important;
         margin-left: 0 !important;
         visibility: visible !important;
         .nav-item {
+          &.nav-icon {
+            margin-right: 0 !important;
+          }
           a {
-            width: 100%;
+            width: $sidebar-width;
             .right {
               display: none !important;
             }
           }
           p {
-            margin-left: 0 !important;
+            // margin-left: 0 !important;
             visibility: visible !important;
           }
+          // level 3
           &:hover {
             color: $sidebar-light-submenu-hover-color !important;
             background-color: lighten($sidebar-light-submenu-bg, 7) !important;
@@ -40,7 +87,7 @@
               position: absolute !important;
               width: $sidebar-width !important;
               left: $sidebar-width !important;
-              margin-top: -40px !important;
+              margin-top: $sidebar-level3-offset !important;
               margin-left: 0 !important;
               visibility: visible !important;
               .nav-item {
@@ -52,42 +99,22 @@
                   visibility: visible !important;
                 }
               }
-
             }
           }
         }
-      }
-      > a > p {
-        top: 0 !important;
-        padding: .5rem 1rem;
-        background-color: inherit;
-        animation-name: unset !important;
-        animation-duration: unset !important;
-        animation-fill-mode: unset !important;
-        margin-left: 0 !important;
       }
       .nav-link {
         p {
           animation-name: unset !important;
           animation-duration: unset !important;
           animation-fill-mode: unset !important;
-          margin-left: 0 !important;
         }
-        &.active p {
-          margin-left: -.25rem !important;
-        }
+        // &.active p {
+        //   margin-left: -$sidebar-indicator-width !important;
+        // }
       }
       > a > p > .right {
-        position: relative !important;
-        float: right;
-        width: auto !important;
-        left: 200px - 20px !important;
-        top: -22px !important;
-        z-index: 900;
-      }
-      > .nav-treeview {
-        overflow: visible !important;
-        margin-left: 0 !important;
+        visibility: hidden !important;
       }
     }
     .main-header {
@@ -97,14 +124,19 @@
     .main-sidebar .sidebar {
       overflow: visible !important;
     }
+
+    [class*="sidebar-light-"] {
+      .nav-sidebar > .nav-item > .nav-link.active {
+        color: $sidebar-light-active-color !important;
+        background-color: $sidebar-light-active-bg !important;
+        border-left: $sidebar-indicator-width solid $sidebar-light-active-indicator;
+        padding-left: calc(.5rem - #{$sidebar-indicator-width}) !important;
+      }
+    }
   }
 }
-.main-header {
-  margin-left: 0 !important;
-  z-index: 1038 !important;
-}
 .main-sidebar {
-  top: 9px !important;
+  top: $sidebar-top-offset !important;
   z-index: 1037 !important;
   .nav-sidebar .nav-item > .nav-link {
     margin-bottom: 0 !important;

@@ -1,56 +1,23 @@
-// Your variable overrides
-$primary: #104e8e;
-$primary-lighten: #f4f8f8;
-$secondary: #fbc235;
-
-// Sidebar
-$sidebar-padding-x: .01rem;
-
-// Light sidebar
-$sidebar-light-bg: $primary;
-$sidebar-light-hover-bg: #093c71;
-$sidebar-light-color: $white;
-$sidebar-light-hover-color: $white;
-$sidebar-light-active-color: $white;
-$sidebar-light-submenu-bg: $primary;
-$sidebar-light-submenu-color: $white;
-$sidebar-light-submenu-hover-color: $white;
-$sidebar-light-submenu-hover-bg: $sidebar-light-hover-bg;
-$sidebar-light-submenu-active-color: $white;
-$sidebar-light-submenu-active-bg: #1975d6;
-
-$nav-pills-border-radius: 0;
-
-$theme-colors: (
-  "primary-lighten": $primary-lighten,
-  "custom-color": #900
-);
-
-.sidebar-light-primary {
-  .nav-sidebar > .nav-item > .nav-link.active {
-    background-color: #093c71 !important;
-    border-left: .25rem solid $secondary;
-    padding-left: calc(1rem - .25rem) !important;
-  }
-}
-
-// .navbar-brand {
-//   display: flex !important;
-//   flex: 1;
-//   justify-content: center;
-//   align-items: center;
-//   width: 100% !important;
-//   margin: 0 !important;
-//   padding: .75rem .5rem !important;
-// }
-
 .we-app-name {
   font-weight: 600;
-  color: $gray-900;
   font-size: 14px !important;
 }
 
+.top-header {
+  z-index: 1039 !important;
+}
+
 .main-header {
+  margin-left: 0 !important;
+  z-index: 1038 !important;
+  padding-left: 0 !important;
+  .navbar-brand {
+    width: $sidebar-mini-width !important;
+    margin-right: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .header-btn {
     border: 1px solid transparent;
     box-sizing: border-box;
@@ -67,9 +34,9 @@ $theme-colors: (
     padding: 0;
     position: relative;
     vertical-align: top;
-    color: #a6afb1;
+    color: $gray-400;
     :hover {
-      background-color: #f4f8f8;
+      background-color: $gray-100;
     }
     .header-btn-icon {
       font-size: 18px;
@@ -81,7 +48,7 @@ $theme-colors: (
     }
   }
   .switch-lang {
-    border: 1px solid #e5ebeb;
+    border: 1px solid $gray-200;
     border-radius: 2em;
     padding: .25em;
     .switch-lang-btn {
@@ -97,7 +64,7 @@ $theme-colors: (
         }
       }
       :hover {
-        background-color: $primary-lighten;
+        background-color: $gray-100;
         color: $primary;
       }
       span {
@@ -113,24 +80,24 @@ $theme-colors: (
   }
   #navbar-supported-content {
     &.btn-user-man {
-      border: 1px solid #e5ebeb !important;
+      border: 1px solid $gray-200 !important;
       border-radius: 20px !important;
       min-width: 185px !important;
       .user-profile{
         .img-profile {
           object-fit: cover;
           border-radius: 50% !important;
-          background-color: #fff;
+          background-color: $white;
         }
       }
       .name {
-        font-size: 10px;
-        color: #3c4142;
-        font-weight: 500;
+        font-size: 10px !important;
+        color: $gray-800;
+        font-weight: 600 !important;
       }
       .role {
         font-size: 10px;
-        color: #0f4d8e;
+        color: $primary-dark;
         font-weight: 400;
       }
       &[aria-expanded="true"] {
@@ -140,7 +107,7 @@ $theme-colors: (
       }
       +.dropdown-menu {
         border-radius: 0;
-        border: 1px solid #e5ebeb;
+        border: 1px solid $gray-200;
         width: 100%;
         margin-right: 0;
         margin-top: -1px !important;
@@ -153,13 +120,13 @@ $theme-colors: (
           margin: 5px 0;
         }
         .dropdown-item {
-          font-size: 12px;
+          font-size: 12px !important;
           color: $gray-900 !important;
           padding: 8px 20px;
           border-radius: 10px;
-          font-weight: 500;
+          font-weight: 700 !important;
           :hover {
-            background-color: $primary-lighten;
+            background-color: $gray-100;
             color: $primary !important;
           }
         }

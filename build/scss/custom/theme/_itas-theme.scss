@@ -1,0 +1,97 @@
+// Your variable overrides
+$primary: #5847d7;
+$primary-light: #7c6bf7;
+$primary-dark: #4434bb;
+$primary-darken: #2f2482;
+$secondary: #272e39;
+
+// Font
+$font-family-base: "Kanit", "Roboto", sans-serif;
+
+// Sidebar
+$sidebar-padding-x: .01rem;
+$sidebar-mini-width: 5rem;
+$sidebar-indicator-width: .4rem !default;
+$sidebar-level2-offset: -4.5rem !default;
+$sidebar-level3-offset: -3rem !default;
+$sidebar-top-offset: 0 !default;
+
+// Light sidebar
+$sidebar-light-bg: $primary;
+$sidebar-light-hover-bg: $white;
+$sidebar-light-color: $white;
+$sidebar-light-hover-color: $black;
+$sidebar-light-active-color: $black;
+$sidebar-light-active-bg: $white !default;
+$sidebar-light-active-indicator: #2f2767 !default;
+$sidebar-light-submenu-bg: $primary;
+$sidebar-light-submenu-color: $white;
+$sidebar-light-submenu-hover-color: $sidebar-light-hover-color;
+$sidebar-light-submenu-hover-bg: $sidebar-light-hover-bg;
+$sidebar-light-submenu-active-color: $sidebar-light-active-color;
+$sidebar-light-submenu-active-bg: $sidebar-light-active-bg;
+
+$nav-pills-border-radius: 0;
+
+$theme-colors: (
+  "primary": $primary,
+  "primary-light": $primary-light,
+  "primary-dark": $primary-dark,
+  "primary-darken": $primary-darken,
+  "secondary": $secondary
+);
+
+.sidebar-light-primary {
+  .nav-sidebar > .nav-item > .nav-link.active {
+    background-color: $sidebar-light-active-bg !important;
+    color: $sidebar-light-active-color !important;
+  }
+}
+
+[class*="sidebar-light-"] {
+  background: linear-gradient(270deg, #100a33 22.44%, #213089 62.67%, #362348 95.62%) !important;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .25) !important;
+  .nav-treeview > .nav-item {
+    background: linear-gradient(335deg, #100a33 22.44%, #213089 62.67%, #362348 95.62%) !important;
+    > a{
+      padding-top: .75rem !important;
+      padding-bottom: .75rem !important;
+    }
+  }
+}
+
+.layout-navbar-fixed .wrapper{
+  .main-header {
+    left: 0 !important;
+    position: fixed !important;
+    right: 0 !important;
+    top: 32px !important;
+    border-bottom: unset !important;
+    background: linear-gradient(170deg, #100a33 22.44%, #213089 62.67%, #362348 95.62%) !important;
+    .navbar-nav .nav-item {
+      color: $white !important;
+    }
+  }
+  .top-header {
+    left: 0 !important;
+    position: fixed !important;
+    right: 0 !important;
+    top: 0 !important;
+    padding: 0 !important;
+  }
+}
+.navbar-light .navbar-nav .nav-link {
+  color: $white !important;
+}
+.layout-navbar-fixed .wrapper .content-wrapper{
+  margin-top: calc(32px + 66px) !important;
+}
+.main-footer{
+  padding-top: .25rem !important;
+  padding-bottom: .25rem !important;
+  font-size: .8rem !important;
+}
+.user-dropmenu {
+  user-select: none;
+  color: $black !important;
+}
