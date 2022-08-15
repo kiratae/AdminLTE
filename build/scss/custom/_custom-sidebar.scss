@@ -62,19 +62,23 @@
         margin-top: $sidebar-level2-offset !important;
         margin-left: 0 !important;
         visibility: visible !important;
-        .nav-item {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, .25) !important;
+        > .nav-item {
           &.nav-icon {
             margin-right: 0 !important;
           }
           a {
-            width: $sidebar-width;
+            width: 100%;
             .right {
               display: none !important;
             }
           }
           p {
-            // margin-left: 0 !important;
+            margin-left: 0 !important;
+            width: 100% !important;
             visibility: visible !important;
+            word-wrap: break-word !important;
+            white-space: normal !important;
           }
           // level 3
           &:hover {
@@ -90,11 +94,15 @@
               margin-top: $sidebar-level3-offset !important;
               margin-left: 0 !important;
               visibility: visible !important;
-              .nav-item {
+              box-shadow: 0 4px 4px rgba(0, 0, 0, .25) !important;
+              > .nav-item {
                 a {
-                  width: 100%;
+                  width: 100% !important;
                 }
                 p {
+                  width: 100% !important;
+                  word-wrap: break-word !important;
+                  white-space: normal !important;
                   margin-left: 0 !important;
                   visibility: visible !important;
                 }

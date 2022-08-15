@@ -66,6 +66,46 @@
   color: #000 !important;
 }
 
+.card.card-content {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.07) !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.card.card-content .card-header {
+  padding: 20px 25px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07) !important;
+}
+
+.card.card-content .card-header .card-title {
+  font-size: 20px !important;
+  font-weight: 400 !important;
+}
+
+.card.card-content .card-header .circle {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  border-radius: 25px;
+  font-size: 18px;
+  line-height: 1.33;
+  display: inline-block;
+  margin-right: 10px;
+  color: #ced4da;
+  background-color: transparent;
+  border: 1px solid #ced4da;
+}
+
+.card.card-content .card-header .circle > i.fa {
+  margin-top: 5px;
+}
+
+.card.card-content .card-body {
+  padding: 25px;
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
 /*!
  * Bootstrap v4.6.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -125,7 +165,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Kanit", "Roboto", sans-serif;
+  font-family: "Prompt", "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -6718,7 +6758,7 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Kanit", "Roboto", sans-serif;
+  font-family: "Prompt", "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6831,7 +6871,7 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Kanit", "Roboto", sans-serif;
+  font-family: "Prompt", "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -11198,7 +11238,7 @@ a.text-primary-darken:hover, a.text-primary-darken:focus {
 .preloader {
   display: -ms-flexbox;
   display: flex;
-  background-color: #f4f6f9;
+  background-color: #edf1f5;
   height: 100vh;
   width: 100%;
   transition: height 200ms linear;
@@ -12317,7 +12357,7 @@ body.sidebar-collapse:not(.sidebar-mini-xs):not(.sidebar-mini-md):not(.sidebar-m
 }
 
 .content-wrapper {
-  background-color: #f4f6f9;
+  background-color: #edf1f5;
 }
 
 .content-wrapper > .content {
@@ -36966,7 +37006,7 @@ body.iframe-mode-fullscreen.layout-navbar-fixed .wrapper .content-wrapper {
   left: 0;
   width: 100%;
   display: none;
-  background-color: #f4f6f9;
+  background-color: #edf1f5;
 }
 
 .content-wrapper.iframe-mode .tab-loading > div {
@@ -41886,7 +41926,7 @@ select.form-control-sm ~ .select2-container--default .select2-selection--multipl
 }
 
 .mapael .mapTooltip {
-  font-family: "Kanit", "Roboto", sans-serif;
+  font-family: "Prompt", "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -56020,24 +56060,29 @@ a.text-muted:hover {
     margin-top: -4.5rem !important;
     margin-left: 0 !important;
     visibility: visible !important;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) !important;
   }
-  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview .nav-item.nav-icon {
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview > .nav-item.nav-icon {
     margin-right: 0 !important;
   }
-  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview .nav-item a {
-    width: 250px;
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview > .nav-item a {
+    width: 100%;
   }
-  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview .nav-item a .right {
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview > .nav-item a .right {
     display: none !important;
   }
-  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview .nav-item p {
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview > .nav-item p {
+    margin-left: 0 !important;
+    width: 100% !important;
     visibility: visible !important;
+    word-wrap: break-word !important;
+    white-space: normal !important;
   }
-  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview .nav-item:hover {
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview > .nav-item:hover {
     color: #000 !important;
     background-color: #7364dd !important;
   }
-  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview .nav-item:hover > .nav-treeview {
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview > .nav-item:hover > .nav-treeview {
     color: #000 !important;
     background-color: #7364dd !important;
     display: block !important;
@@ -56047,11 +56092,15 @@ a.text-muted:hover {
     margin-top: -3rem !important;
     margin-left: 0 !important;
     visibility: visible !important;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) !important;
   }
-  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview .nav-item:hover > .nav-treeview .nav-item a {
-    width: 100%;
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview > .nav-item:hover > .nav-treeview > .nav-item a {
+    width: 100% !important;
   }
-  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview .nav-item:hover > .nav-treeview .nav-item p {
+  .sidebar-mini.sidebar-collapse .nav-sidebar > li:hover > .nav-treeview > .nav-item:hover > .nav-treeview > .nav-item p {
+    width: 100% !important;
+    word-wrap: break-word !important;
+    white-space: normal !important;
     margin-left: 0 !important;
     visibility: visible !important;
   }
