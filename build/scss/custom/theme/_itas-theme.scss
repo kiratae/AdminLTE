@@ -1,39 +1,49 @@
 // Your variable overrides
-$primary: #5847d7;
-$primary-light: #7c6bf7;
-$primary-dark: #4434bb;
-$primary-darken: #2f2482;
-$secondary: #272e39;
+$primary:                   #5847d7;
+$primary-light:             #7c6bf7;
+$primary-dark:              #4434bb;
+$primary-darken:            #2f2482;
+$secondary:                 #272e39;
+$danger:                    #CF4670;
 
-$main-bg: #edf1f5;
+$main-bg:                   #edf1f5;
 
 // Font
-$font-family-base: "Prompt", "Roboto", sans-serif;
+$font-family-base:            "Prompt", "Roboto", sans-serif;
+$font-weight-light:           200;
+$font-weight-normal:          300;
+$font-weight-bold:            400;
+$btn-font-weight:             $font-weight-normal;
 
 // Sidebar
-$sidebar-padding-x: .01rem;
-$sidebar-mini-width: 5rem;
-$sidebar-indicator-width: .4rem !default;
-$sidebar-level2-offset: -4.5rem !default;
-$sidebar-level3-offset: -3rem !default;
-$sidebar-top-offset: 0 !default;
+$sidebar-padding-x:           .01rem;
+$sidebar-mini-width:          5rem;
+$sidebar-indicator-width:     .4rem !default;
+$sidebar-level2-offset:       -4.5rem !default;
+$sidebar-level3-offset:       -3rem !default;
+$sidebar-top-offset:          0 !default;
 
 // Light sidebar
-$sidebar-light-bg: $primary;
-$sidebar-light-hover-bg: $white;
-$sidebar-light-color: $white;
-$sidebar-light-hover-color: $black;
-$sidebar-light-active-color: $black;
-$sidebar-light-active-bg: $white !default;
-$sidebar-light-active-indicator: #2f2767 !default;
-$sidebar-light-submenu-bg: $primary;
-$sidebar-light-submenu-color: $white;
-$sidebar-light-submenu-hover-color: $sidebar-light-hover-color;
-$sidebar-light-submenu-hover-bg: $sidebar-light-hover-bg;
-$sidebar-light-submenu-active-color: $sidebar-light-active-color;
-$sidebar-light-submenu-active-bg: $sidebar-light-active-bg;
+$sidebar-light-bg:                    $primary;
+$sidebar-light-hover-bg:              $white;
+$sidebar-light-color:                 $white;
+$sidebar-light-hover-color:           $black;
+$sidebar-light-active-color:          $black;
+$sidebar-light-active-bg:             $white !default;
+$sidebar-light-active-indicator:    #2f2767 !default;
+$sidebar-light-submenu-bg:            $primary;
+$sidebar-light-submenu-color:         $white;
+$sidebar-light-submenu-hover-color:   $sidebar-light-hover-color;
+$sidebar-light-submenu-hover-bg:      $sidebar-light-hover-bg;
+$sidebar-light-submenu-active-color:  $sidebar-light-active-color;
+$sidebar-light-submenu-active-bg:     $sidebar-light-active-bg;
 
-$nav-pills-border-radius: 0;
+$component-active-bg:         $primary;
+$input-focus-border-color:    $primary;
+
+$nav-pills-border-radius:     0;
+
+$card-content-border-color: rgba(0, 0, 0, .07) !default;
 
 $theme-colors: (
   "primary": $primary,
@@ -43,97 +53,8 @@ $theme-colors: (
   "secondary": $secondary
 );
 
-.sidebar-light-primary {
-  .nav-sidebar > .nav-item > .nav-link.active {
-    background-color: $sidebar-light-active-bg !important;
-    color: $sidebar-light-active-color !important;
-  }
-}
+@import "itas/header";
+@import "itas/sidebar";
+@import "itas/card";
+@import "itas/list-page";
 
-[class*="sidebar-light-"] {
-  background: linear-gradient(270deg, #100a33 22.44%, #213089 62.67%, #362348 95.62%) !important;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, .25) !important;
-  .nav-treeview > .nav-item {
-    background: linear-gradient(335deg, #100a33 22.44%, #213089 62.67%, #362348 95.62%) !important;
-    > a{
-      padding-top: .75rem !important;
-      padding-bottom: .75rem !important;
-    }
-  }
-}
-
-.layout-navbar-fixed .wrapper{
-  .main-header {
-    left: 0 !important;
-    position: fixed !important;
-    right: 0 !important;
-    top: 32px !important;
-    border-bottom: unset !important;
-    background: linear-gradient(170deg, #100a33 22.44%, #213089 62.67%, #362348 95.62%) !important;
-    .navbar-nav .nav-item {
-      color: $white !important;
-    }
-  }
-  .top-header {
-    left: 0 !important;
-    position: fixed !important;
-    right: 0 !important;
-    top: 0 !important;
-    padding: 0 !important;
-  }
-}
-.navbar-light .navbar-nav .nav-link {
-  color: $white !important;
-}
-.layout-navbar-fixed .wrapper .content-wrapper{
-  margin-top: calc(32px + 66px) !important;
-}
-.main-footer{
-  padding-top: .25rem !important;
-  padding-bottom: .25rem !important;
-  font-size: .8rem !important;
-}
-.user-dropmenu {
-  user-select: none;
-  color: $black !important;
-}
-
-$card-conent-border-color: rgba(0, 0, 0, .07);
-.card.card-content {
-  box-shadow: 0 3px 5px 0 $card-conent-border-color !important;
-  border: none !important;
-  border-radius: 0 !important;
-
-  .card-header {
-    padding: 20px 25px !important;
-    border-bottom: 1px solid $card-conent-border-color !important;
-
-    .card-title {
-      font-size: 20px !important;
-      font-weight: 400 !important;
-    }
-
-    .circle {
-      width: 50px;
-      height: 50px;
-      padding: 10px 16px;
-      border-radius: 25px;
-      font-size: 18px;
-      line-height: 1.33;
-      display: inline-block;
-      margin-right: 10px;
-      color: $gray-400;
-      background-color: transparent;
-      border: 1px solid $gray-400;
-      > i.fa {
-        margin-top: 5px;
-      }
-    }
-  }
-
-  .card-body {
-    padding: 25px;
-    border-top: 1px solid $card-conent-border-color;
-    border-bottom: 1px solid $card-conent-border-color;
-  }
-}

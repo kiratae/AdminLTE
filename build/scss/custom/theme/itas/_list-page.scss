@@ -1,0 +1,34 @@
+.table.table-striped.we-table {
+    thead {
+        background-color: $black;
+        tr th {
+            font-weight: $font-weight-bold;
+            color: $white;
+            padding: 10px !important;
+        }
+    }
+    tbody tr td {
+        font-weight: $font-weight-normal;
+        border: none !important;
+        a {
+            color: $black;
+            text-decoration: none;
+        }
+        &:not(.tool) a:hover {
+            text-decoration: underline;
+        }
+        &.tool .btn-icon:not(:first-child){
+            border-left: 2px solid rgba(0, 0, 0, .08);
+        }
+    }
+    [class*=icheck-] > input:first-child + label::before {
+        background-color: $white;
+    }
+    .icheck-primary > input:first-child:checked + label::before {
+        background-color: $primary;
+    }
+}
+
+.we-form-filter {
+
+}

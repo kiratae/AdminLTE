@@ -1,0 +1,35 @@
+.layout-navbar-fixed .wrapper {
+  .main-header {
+    left: 0 !important;
+    position: fixed !important;
+    right: 0 !important;
+    top: 32px !important;
+    border-bottom: unset !important;
+    background: linear-gradient(170deg, #100a33 22.44%, #213089 62.67%, #362348 95.62%) !important;
+    .navbar-nav .nav-item {
+      color: $white !important;
+    }
+  }
+  .top-header {
+    left: 0 !important;
+    position: fixed !important;
+    right: 0 !important;
+    top: 0 !important;
+    padding: 0 !important;
+  }
+}
+.navbar-light .navbar-nav .nav-link {
+  color: $white !important;
+}
+.layout-navbar-fixed .wrapper .content-wrapper {
+  margin-top: calc(32px + 66px) !important;
+}
+.main-footer {
+  padding-top: .25rem !important;
+  padding-bottom: .25rem !important;
+  font-size: .8rem !important;
+}
+.user-dropmenu {
+  user-select: none;
+  color: $black !important;
+}

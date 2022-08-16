@@ -1,0 +1,9 @@
+.wa-form-edit .form-group {
+    .label-val::before {
+        content: ": ";
+    }
+    .col-form-label.required::before {
+        content: "*";
+        color: $red;
+    }
+}
