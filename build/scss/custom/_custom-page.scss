@@ -2,8 +2,8 @@
     .label-val::before {
         content: ": ";
     }
-    .col-form-label.required::before {
-        content: "*";
+    .col-form-label.required::after {
+        content: " *";
         color: $red;
     }
 }
