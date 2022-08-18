@@ -1,21 +1,21 @@
 .sidebar-light-primary {
-    .nav-sidebar > .nav-item > .nav-link.active {
-      background-color: $sidebar-light-active-bg !important;
-      color: $sidebar-light-active-color !important;
+  .nav-sidebar > .nav-item > .nav-link.active {
+    background-color: $sidebar-light-active-bg !important;
+    color: $sidebar-light-active-color !important;
+  }
+}
+
+[class*="sidebar-light-"] {
+  background: linear-gradient(270deg, #100a33 22.44%, #213089 62.67%, #362348 95.62%) !important;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .25) !important;
+  .nav-treeview > .nav-item {
+    background: linear-gradient(335deg, #100a33 22.44%, #213089 62.67%, #362348 95.62%) !important;
+    > a {
+      padding-top: .75rem !important;
+      padding-bottom: .75rem !important;
+    }
+    .nav-icon {
+      font-size: 2rem;
     }
   }
-  
-  [class*="sidebar-light-"] {
-    background: linear-gradient(270deg, #100a33 22.44%, #213089 62.67%, #362348 95.62%) !important;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, .25) !important;
-    .nav-treeview > .nav-item {
-      background: linear-gradient(335deg, #100a33 22.44%, #213089 62.67%, #362348 95.62%) !important;
-      > a{
-        padding-top: .75rem !important;
-        padding-bottom: .75rem !important;
-      }
-      .nav-icon{
-        font-size: 2rem;
-      }
-    }
-  }
+}

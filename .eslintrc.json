@@ -6,7 +6,8 @@
     "plugin:import/warnings",
     "plugin:unicorn/recommended",
     "xo",
-    "xo/browser"
+    "xo/browser",
+    "prettier"
   ],
   "env": {
     "jquery": true

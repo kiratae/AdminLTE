@@ -1,63 +1,62 @@
 // Your variable overrides
-$primary:                   #5847d7;
-$primary-light:             #7c6bf7;
-$primary-dark:              #4434bb;
-$primary-darken:            #2f2482;
-$secondary:                 #272e39;
-$danger:                    #CF4670;
+$primary: #5847d7;
+$primary-light: #7c6bf7;
+$primary-dark: #4434bb;
+$primary-darken: #2f2482;
+$secondary: #272e39;
+$danger: #cf4670;
 
-$main-bg:                   #edf1f5;
+$main-bg: #edf1f5;
 
 // Font
-$font-family-base:            "Prompt", "Roboto", sans-serif;
-$font-weight-light:           200;
-$font-weight-normal:          300;
-$font-weight-bold:            400;
-$btn-font-weight:             $font-weight-normal;
+$font-family-base: "Prompt", "Roboto", sans-serif;
+$font-weight-light: 200;
+$font-weight-normal: 300;
+$font-weight-bold: 400;
+$btn-font-weight: $font-weight-normal;
 
 // Sidebar
-$sidebar-padding-x:           .01rem;
-$sidebar-mini-width:          6rem;
-$sidebar-indicator-width:     .4rem !default;
-$sidebar-level2-offset:       -4.5rem !default;
-$sidebar-level3-offset:       -3rem !default;
-$sidebar-top-offset:          0 !default;
+$sidebar-padding-x: .01rem;
+$sidebar-mini-width: 6rem;
+$sidebar-indicator-width: .4rem !default;
+$sidebar-level2-offset: -4.5rem !default;
+$sidebar-level3-offset: -3rem !default;
+$sidebar-top-offset: 0 !default;
 
 // Light sidebar
-$sidebar-light-bg:                    $primary;
-$sidebar-light-hover-bg:              $white;
-$sidebar-light-color:                 $white;
-$sidebar-light-hover-color:           $black;
-$sidebar-light-active-color:          $black;
-$sidebar-light-active-bg:             $white !default;
-$sidebar-light-active-indicator:    #2f2767 !default;
-$sidebar-light-submenu-bg:            $primary;
-$sidebar-light-submenu-color:         $white;
-$sidebar-light-submenu-hover-color:   $sidebar-light-hover-color;
-$sidebar-light-submenu-hover-bg:      $sidebar-light-hover-bg;
-$sidebar-light-submenu-active-color:  $sidebar-light-active-color;
-$sidebar-light-submenu-active-bg:     $sidebar-light-active-bg;
+$sidebar-light-bg: $primary;
+$sidebar-light-hover-bg: $white;
+$sidebar-light-color: $white;
+$sidebar-light-hover-color: $black;
+$sidebar-light-active-color: $black;
+$sidebar-light-active-bg: $white !default;
+$sidebar-light-active-indicator: #2f2767 !default;
+$sidebar-light-submenu-bg: $primary;
+$sidebar-light-submenu-color: $white;
+$sidebar-light-submenu-hover-color: $sidebar-light-hover-color;
+$sidebar-light-submenu-hover-bg: $sidebar-light-hover-bg;
+$sidebar-light-submenu-active-color: $sidebar-light-active-color;
+$sidebar-light-submenu-active-bg: $sidebar-light-active-bg;
 
-$component-active-bg:         $primary;
-$input-focus-border-color:    $primary;
+$component-active-bg: $primary;
+$input-focus-border-color: $primary;
 
-$nav-pills-border-radius:     0;
+$nav-pills-border-radius: 0;
 
 $card-content-border-color: rgba(0, 0, 0, .07) !default;
 
 // tempus-dominus
-$td-active-bg:                $primary;
+$td-active-bg: $primary;
 
 $theme-colors: (
   "primary": $primary,
   "primary-light": $primary-light,
   "primary-dark": $primary-dark,
   "primary-darken": $primary-darken,
-  "secondary": $secondary
+  "secondary": $secondary,
 );
 
 @import "itas/header";
 @import "itas/sidebar";
 @import "itas/card";
 @import "itas/list-page";
-
