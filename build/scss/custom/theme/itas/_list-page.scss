@@ -29,5 +29,14 @@
   }
 }
 
+.btn.btn-under-line {
+  min-width: 90px;
+  border-radius: 0 !important;
+  border: none !important;
+  &.active {
+    border-bottom: 2px solid $primary-btn-indicator !important;
+  }
+}
+
 // .we-form-filter {
 // }
