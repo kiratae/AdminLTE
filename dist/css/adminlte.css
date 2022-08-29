@@ -56160,6 +56160,10 @@ a.text-muted:hover {
   overflow: hidden;
 }
 
+.we-dropzone.is-invalid {
+  border-color: #cf4670;
+}
+
 .we-dropzone.dz-started {
   cursor: default;
   padding: 0;

@@ -23,6 +23,9 @@
   text-align: center;
   padding: 1rem;
   overflow: hidden;
+  &.is-invalid {
+    border-color: $danger;
+  }
   &.dz-started {
     cursor: default;
     padding: 0;
