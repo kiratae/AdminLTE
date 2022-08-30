@@ -76,17 +76,17 @@
   border-radius: 0 !important;
 }
 
-.card.card-content .card-header {
+.card.card-content > .card-header {
   padding: 20px 25px !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07) !important;
 }
 
-.card.card-content .card-header .card-title {
+.card.card-content > .card-header > .card-title {
   font-size: 20px !important;
   font-weight: 400 !important;
 }
 
-.card.card-content .card-header .circle {
+.card.card-content > .card-header > .card-title > .circle {
   width: 50px;
   height: 50px;
   padding: 10px 16px;
@@ -100,11 +100,11 @@
   border: 1px solid #ced4da;
 }
 
-.card.card-content .card-header .circle > i.fa {
+.card.card-content > .card-header > .card-title > .circle > i.fa {
   margin-top: 5px;
 }
 
-.card.card-content .card-body {
+.card.card-content > .card-body {
   padding: 25px;
   border-top: 1px solid rgba(0, 0, 0, 0.07);
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
@@ -56199,6 +56199,7 @@ a.text-muted:hover {
 }
 
 .we-dropzone .dz-preview .dz-progess {
+  z-index: 1;
   background-color: #cac5f2;
   opacity: .6;
   height: 100%;
@@ -56206,13 +56207,8 @@ a.text-muted:hover {
   transition: opacity .5s;
 }
 
-.we-dropzone .dz-preview .total-progress {
-  position: absolute;
-  font-size: 2rem;
-  color: #fff;
-}
-
 .we-dropzone .dz-preview .remove-btn {
+  z-index: 2;
   visibility: hidden;
   position: absolute;
   top: .5rem;
@@ -56234,6 +56230,27 @@ a.text-muted:hover {
 .we-dropzone .dz-preview .remove-btn span {
   color: #fff;
   font-size: 2rem;
+}
+
+.we-dropzone .dz-preview .dz-error {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0) 100%);
+}
+
+.we-dropzone .dz-preview .dz-error > p {
+  font-weight: 400;
 }
 
 .btn-multiple-state {
