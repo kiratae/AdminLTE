@@ -16,22 +16,26 @@ $font-weight-normal: 300;
 $font-weight-bold: 400;
 $btn-font-weight: $font-weight-normal;
 
+// Navbar
+$navbar-top-height: 32px !default;
+$navbar-main-height: 69px !default;
+
 // Sidebar
 $sidebar-padding-x: .01rem;
 $sidebar-mini-width: 6rem;
 $sidebar-indicator-width: .4rem !default;
 $sidebar-level2-offset: -4.5rem !default;
 $sidebar-level3-offset: -3rem !default;
-$sidebar-top-offset: 0 !default;
+$sidebar-top-offset: calc(#{$navbar-top-height} + #{$navbar-main-height}) !default;
 
 // Light sidebar
-$sidebar-light-bg: $primary;
-$sidebar-light-hover-bg: $white;
+$sidebar-light-bg: #100a33;
 $sidebar-light-color: $white;
-$sidebar-light-hover-color: $black;
-$sidebar-light-active-color: $black;
-$sidebar-light-active-bg: $white !default;
-$sidebar-light-active-indicator: #2f2767 !default;
+$sidebar-light-hover-color: $white;
+$sidebar-light-hover-bg: $primary-light;
+$sidebar-light-active-color: $white;
+$sidebar-light-active-bg: $primary-darken !default;
+$sidebar-light-active-indicator: $white !default;
 $sidebar-light-submenu-bg: $primary;
 $sidebar-light-submenu-color: $white;
 $sidebar-light-submenu-hover-color: $sidebar-light-hover-color;
@@ -56,6 +60,9 @@ $theme-colors: (
   "primary-darken": $primary-darken,
   "secondary": $secondary,
 );
+
+$link-color:                theme-color("primary");
+$link-hover-color:          darken($link-color, 15%);
 
 @import "itas/header";
 @import "itas/sidebar";

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
 
-<body class="hold-transition sidebar-mini layout-navbar-fixed layout-footer-fixed sidebar-collapse">
+<body class="hold-transition sidebar-mini layout-navbar-fixed layout-fixed layout-footer-fixed sidebar-collapse">
     <!-- Site wrapper -->
     <div class="wrapper">
         <!-- Navbar top -->
@@ -29,7 +29,7 @@
             <!-- Right navbar links -->
             <div class="d-inline-flex ml-auto mr-5 align-items-center">
                 <div class="mx-3 py-1"><i class="fa fa-envelope"></i></div>
-                <div class="dropdown">
+                <div class="dropdown dropdown-hover">
                     <a class="d-inline-flex dropdown-toggle user-dropmenu align-items-center py-1" id="navbar-user" role="button" data-toggle="dropdown" data-offset="50" aria-haspopup="true" aria-expanded="false">
                         ADMIN
                     </a>
@@ -71,12 +71,231 @@
 
                 <!-- Sidebar Menu -->
                 <nav class="mt-0">
-                    <!-- <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> -->
-                    <ul class="nav nav-pills nav-sidebar flex-column">
+
+                    <!-- on minibar collapse -->
+                    <ul class="nav nav-pills nav-sidebar nav-sidebar-mini flex-column">
+                        <li class="nav-item dropdown dropright dropdown-hover">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    ติดตามสถานะ
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="../../index.html" class="nav-link">
+                                        <i class="far fa-circle"></i>
+                                        <p>Dashboard v1</p>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="../../index2.html" class="nav-link">
+                                        Dashboard v2
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="../../index3.html" class="nav-link">
+                                        Dashboard v3
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown dropright dropdown-hover">
+                            <a href="#" class="nav-link active" data-toggle=dropdown aria-haspopup=true aria-expanded=false>
+                                <i class="nav-icon fas fa-copy"></i>
+                                <p>
+                                    Layout Options
+                                    <i class="fas fa-angle-left right"></i>
+                                    <span class="badge badge-info right">6</span>
+                                </p>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <a href="pages/layout/we-fixed-sidebar.html" class="dropdown-item nav-link active">
+                                    <i class="far fa-circle"></i>
+                                    <p>We Fixed Sidebar</p>
+                                </a>
+                                <a href="../layout/we-fixed-sidebar.html" class="dropdown-item nav-link">
+                                    <i class="far fa-circle"></i>
+                                    <p>Top Navigation</p>
+                                </a>
+                                <a href="../layout/top-nav.html" class="dropdown-item nav-link">
+                                    <i class="far fa-circle"></i>
+                                    <p>Top Navigation</p>
+                                </a>
+                                <a href="../layout/top-nav-sidebar.html" class="dropdown-item nav-link">
+                                    <i class="far fa-circle"></i>
+                                    <p>Top Navigation + Sidebar Top Navigation + Sidebar</p>
+                                </a>
+                                <a href="../layout/boxed.html" class="dropdown-item nav-link">
+                                    <i class="far fa-circle"></i>
+                                    <p>Boxed</p>
+                                </a>
+                                <a href="../layout/fixed-sidebar.html" class="dropdown-item nav-link">
+                                    <i class="far fa-circle"></i>
+                                    <p>Fixed Sidebar</p>
+                                </a>
+                                <a href="../layout/fixed-sidebar-custom.html" class="dropdown-item nav-link">
+                                    <i class="far fa-circle"></i>
+                                    <p>Fixed Sidebar <small>+ Custom Area</small></p>
+                                </a>
+                                <a href="../layout/fixed-topnav.html" class="dropdown-item nav-link">
+                                    <i class="far fa-circle"></i>
+                                    <p>Fixed Navbar</p>
+                                </a>
+                                <a href="../layout/fixed-footer.html" class="dropdown-item nav-link">
+                                    <i class="far fa-circle"></i>
+                                    <p>Fixed Footer</p>
+                                </a>
+                                <a href="../layout/collapsed-sidebar.html" class="dropdown-item nav-link">
+                                    <i class="far fa-circle"></i>
+                                    <p>Collapsed Sidebar</p>
+                                </a>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown dropright dropdown-hover">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-circle"></i>
+                                <p>Level 1</p>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown dropright dropdown-hover">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-circle"></i>
+                                <p>
+                                    Level 1
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle"></i>
+                                        <p>Level 2</p>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item dropdown dropright dropdown-hover">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle"></i>
+                                        <p>
+                                            Level 2
+                                            <i class="right fas fa-angle-left"></i>
+                                        </p>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item">
+                                            <a href="#" class="nav-link">
+                                                <i class="far fa-dot-circle"></i>
+                                                <p>Level 3</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="nav-link">
+                                                <i class="far fa-dot-circle"></i>
+                                                <p>Level 3</p>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="nav-link">
+                                                <i class="far fa-dot-circle"></i>
+                                                <p>Level 3</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle"></i>
+                                        <p>Level 2</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown dropright dropdown-hover">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-circle"></i>
+                                <p>Level 1</p>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown dropright dropdown-hover">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-circle"></i>
+                                <p>Level 1</p>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown dropright dropdown-hover">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-circle"></i>
+                                <p>Level 1</p>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown dropright dropdown-hover">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-circle"></i>
+                                <p>Level 1</p>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown dropright dropdown-hover">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-circle"></i>
+                                <p>Level 1</p>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown dropright dropdown-hover">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-circle"></i>
+                                <p>Level 1</p>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown dropright dropdown-hover">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-circle"></i>
+                                <p>Level 1</p>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown dropright dropdown-hover">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-circle"></i>
+                                <p>Level 1</p>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown dropright dropdown-hover">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-circle"></i>
+                                <p>Level 1</p>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown dropright dropdown-hover">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-circle"></i>
+                                <p>Level 1</p>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown dropright dropdown-hover">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-circle"></i>
+                                <p>Level 1</p>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown dropright dropdown-hover">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-circle"></i>
+                                <p>Level 1</p>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown dropright dropdown-hover">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-circle"></i>
+                                <p>Level 1</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                        <li class="nav-item dropdown dropright dropdown-hover">
-                            <a href="#" class="nav-link" data-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     ติดตามสถานะ
@@ -96,24 +315,6 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../../index3.html" class="nav-link">
-                                        Dashboard v3
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-item">
-                                    <a href="../../index.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Dashboard v1</p>
-                                    </a>
-                                </li>
-                                <li class="dropdown-item">
-                                    <a href="../../index2.html" class="nav-link">
-                                        Dashboard v2
-                                    </a>
-                                </li>
-                                <li class="dropdown-item">
                                     <a href="../../index3.html" class="nav-link">
                                         Dashboard v3
                                     </a>

@@ -1,41 +1,99 @@
 // Show menu items on hover
 .sidebar-mini.sidebar-collapse {
   @include media-breakpoint-up(sm) {
-    //Make the sidebar links, menus, labels, badges
-    //and angle icons disappear
-    .nav-sidebar > li {
-      height: 4.5rem;
-    }
-
-    .nav-sidebar > li > .nav-link {
-      /* prettier-ignore */
-      padding: .5rem .25rem !important;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      &.active {
-        padding-left: calc(.25rem - #{$sidebar-indicator-width}) !important;
+    .nav-sidebar {
+      display: none !important;
+      &.nav-sidebar-mini {
+        display: block !important;
+        > .nav-item {
+          height: 4.5rem;
+          &.dropright.show > .nav-link {
+            background-color: $sidebar-light-hover-bg !important;
+            a,
+            p {
+              color: $sidebar-light-hover-color !important;
+            }
+          }
+          > .nav-link {
+            padding: .5rem .25rem !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: $sidebar-mini-width !important;
+            &.active:hover,
+            &:hover {
+              background-color: $sidebar-light-hover-bg !important;
+              a,
+              p {
+                color: $sidebar-light-hover-color !important;
+              }
+            }
+            &.active {
+              border-left: $sidebar-indicator-width solid $sidebar-light-active-indicator;
+              padding-left: calc(.5rem - #{$sidebar-indicator-width}) !important;
+              color: $sidebar-light-active-color !important;
+              background-color: $sidebar-light-active-bg !important;
+            }
+          }
+          .dropdown-menu {
+            padding: 0 !important;
+            border: none !important;
+            margin-left: 0 !important;
+            border-radius: 0 !important;
+            background: transparent !important;
+            .dropdown-item {
+              background-color: $sidebar-light-submenu-bg !important;
+              &.nav-link {
+                p {
+                  margin-left: 0 !important;
+                  color: $sidebar-light-submenu-color !important;
+                  > .right {
+                    visibility: hidden;
+                  }
+                }
+                &.active {
+                  background-color: $sidebar-light-submenu-active-bg !important;
+                  p {
+                    color: $sidebar-light-submenu-active-color !important;
+                  }
+                }
+                &:hover {
+                  p {
+                    color: $sidebar-light-submenu-hover-color !important;
+                  }
+                  background-color: $sidebar-light-submenu-hover-bg !important;
+                }
+              }
+            }
+            .nav-link {
+              width: unset !important;
+              min-width: $sidebar-width !important;
+              > p {
+                display: inline !important;
+                visibility: visible !important;
+                animation-name: unset !important;
+                animation-duration: unset !important;
+                animation-fill-mode: unset !important;
+              }
+            }
+          }
+        }
       }
     }
-
-    .nav-sidebar > .nav-item {
+    .nav-sidebar-mini > .nav-item {
       .nav-icon {
         margin-right: 0 !important;
       }
-
       > .nav-link > .nav-icon {
         margin-bottom: .5rem !important;
       }
-
       > a {
         text-align: center !important;
         height: 4.5rem;
       }
     }
-
-    .nav-sidebar > li > a > p {
+    .nav-sidebar-mini > li > a > p {
       font-size: .75rem !important;
       display: block !important;
       text-overflow: ellipsis !important;
@@ -52,116 +110,36 @@
       animation-duration: unset !important;
       animation-fill-mode: unset !important;
     }
-
-    .nav-sidebar > li > .nav-treeview,
-    .nav-sidebar > li > a > .right,
-    .nav-sidebar > li > a > p > .right,
-    .nav-sidebar li.nav-header {
+    .nav-sidebar-mini > li > a > .right,
+    .nav-sidebar-mini > li > a > p > .right,
+    .nav-sidebar-mini li.nav-header {
       display: none !important;
     }
-
-    // .nav-sidebar > li:hover {
-    //   > .nav-treeview {
-    //     overflow: visible !important;
-    //     display: block !important;
-    //     position: absolute !important;
-    //     width: $sidebar-width !important;
-    //     left: $sidebar-mini-width !important;
-    //     margin-top: $sidebar-level2-offset !important;
-    //     margin-left: 0 !important;
-    //     visibility: visible !important;
-    //     box-shadow: 0 4px 4px rgba(0, 0, 0, .25) !important;
-    //     > .nav-item {
-    //       &.nav-icon {
-    //         margin-right: 0 !important;
-    //       }
-    //       a {
-    //         width: 100%;
-    //         .right {
-    //           display: none !important;
-    //         }
-    //       }
-    //       p {
-    //         margin-left: 0 !important;
-    //         width: 100% !important;
-    //         visibility: visible !important;
-    //         word-wrap: break-word !important;
-    //         white-space: normal !important;
-    //       }
-    //       // level 3
-    //       &:hover {
-    //         color: $sidebar-light-submenu-hover-color !important;
-    //         background-color: lighten($sidebar-light-submenu-bg, 7) !important;
-    //         > .nav-treeview {
-    //           color: $sidebar-light-submenu-hover-color !important;
-    //           background-color: lighten($sidebar-light-submenu-bg, 7) !important;
-    //           display: block !important;
-    //           position: absolute !important;
-    //           width: $sidebar-width !important;
-    //           left: $sidebar-width !important;
-    //           margin-top: $sidebar-level3-offset !important;
-    //           margin-left: 0 !important;
-    //           visibility: visible !important;
-    //           box-shadow: 0 4px 4px rgba(0, 0, 0, .25) !important;
-    //           > .nav-item {
-    //             a {
-    //               width: 100% !important;
-    //             }
-    //             p {
-    //               width: 100% !important;
-    //               word-wrap: break-word !important;
-    //               white-space: normal !important;
-    //               margin-left: 0 !important;
-    //               visibility: visible !important;
-    //             }
-    //           }
-    //         }
-    //       }
-    //     }
-    //   }
-    //   .nav-link {
-    //     p {
-    //       animation-name: unset !important;
-    //       animation-duration: unset !important;
-    //       animation-fill-mode: unset !important;
-    //     }
-    //     // &.active p {
-    //     //   margin-left: -$sidebar-indicator-width !important;
-    //     // }
-    //   }
-    //   > a > p > .right {
-    //     visibility: hidden !important;
-    //   }
-    // }
     .main-header {
       margin-left: 0 !important;
     }
-
     .main-sidebar,
-    .main-sidebar .sidebar {
+    .main-sidebar .sidebar,
+    .main-sidebar .sidebar > .os-padding,
+    // .main-sidebar .sidebar > .os-padding > .os-viewport,
+    .main-sidebar .sidebar nav,
+    .main-sidebar .sidebar .nav-sidebar-mini,
+    .main-sidebar .sidebar .nav-sidebar-mini > .dropdown,
+    .main-sidebar .sidebar .nav-sidebar-mini > .dropdown > .dropdown-menu {
       overflow: visible !important;
     }
-
-    [class*="sidebar-light-"] {
-      .nav-sidebar > .nav-item > .nav-link.active {
-        color: $sidebar-light-active-color !important;
-        background-color: $sidebar-light-active-bg !important;
-        border-left: $sidebar-indicator-width solid $sidebar-light-active-indicator;
-        padding-left: calc(.5rem - #{$sidebar-indicator-width}) !important;
-      }
-    }
+    // .main-sidebar .sidebar > .os-padding > .os-viewport {
+    //   overflow: visible !important;
+    // }
   }
 }
-
 .main-sidebar {
   top: $sidebar-top-offset !important;
   z-index: 1037 !important;
-
-  .nav-sidebar .nav-item > .nav-link {
-    margin-bottom: 0 !important;
-
-    &.active {
-      box-shadow: none !important;
+  .nav-sidebar {
+    display: block !important;
+    &.nav-sidebar-mini {
+      display: none !important;
     }
   }
 }

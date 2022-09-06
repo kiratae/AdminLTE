@@ -2,19 +2,16 @@
 
 (function () {
   'use strict'
-  $('.sidebar-mini.sidebar-collapse .nav-sidebar[data-widget="treeview"] > .nav-item > a').on('click', function (e) {
-    if (e.target !== this) {
-      return
-    }
-
-    return $('.sidebar-mini.sidebar-collapse').length !== 1
-  })
-  $('.sidebar-mini.sidebar-open .nav-sidebar .nav-item .nav-link[data-toggle="dropdown"]').on('click', function (e) {
-    console.log('test')
-    if (e.target !== this) {
-      return
-    }
-
-    return $('.sidebar-mini.sidebar-open').length !== 1
-  })
+  // $('.sidebar-mini.sidebar-collapse .sidebar .dropdown.dropdown-hover').on('mouseover', function () {
+  //   var $menuItem = $(this)
+  //   var $submenuWrapper = $('> .dropdown-menu', $menuItem)
+  //   console.log($menuItem)
+  //   // grab the menu item's position relative to its positioned parent
+  //   var menuItemPos = $menuItem.position()
+  //   // place the submenu in the correct position relevant to the menu item
+  //   $submenuWrapper.css({
+  //     top: menuItemPos.top,
+  //     left: menuItemPos.left - Math.round($menuItem.outerWidth())
+  //   })
+  // })
 })(jQuery)
