@@ -43,8 +43,9 @@
             border-radius: 0 !important;
             background: transparent !important;
             .dropdown-item {
+              padding: 0 !important;
               background-color: $sidebar-light-submenu-bg !important;
-              &.nav-link {
+              .nav-link {
                 p {
                   margin-left: 0 !important;
                   color: $sidebar-light-submenu-color !important;
@@ -134,7 +135,7 @@
   }
 }
 .main-sidebar {
-  top: $sidebar-top-offset !important;
+  // top: $sidebar-top-offset !important;
   z-index: 1037 !important;
   .nav-sidebar {
     display: block !important;
