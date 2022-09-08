@@ -137,6 +137,9 @@
 .main-sidebar {
   // top: $sidebar-top-offset !important;
   z-index: 1037 !important;
+  min-height: 100vh !important;
+  height: calc(100% + #{$sidebar-top-offset}) !important;
+  padding-bottom: 300px;
   .nav-sidebar {
     display: block !important;
     &.nav-sidebar-mini {

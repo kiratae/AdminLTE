@@ -1,6 +1,6 @@
 .table.table-striped.we-table {
   thead {
-    background-color: $black;
+    background-color: $primary-navbar;
     tr th {
       font-weight: $font-weight-bold;
       color: $white;
@@ -38,5 +38,10 @@
   }
 }
 
-// .we-form-filter {
-// }
+.we-search-form {
+  .btn-clear {
+    border-color: $gray-400 !important;
+    background-color: $gray-200 !important;
+    color: $gray-700 !important;
+  }
+}

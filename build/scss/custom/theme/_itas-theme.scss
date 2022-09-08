@@ -3,6 +3,7 @@ $primary: #5847d7;
 $primary-light: #7c6bf7;
 $primary-dark: #4434bb;
 $primary-darken: #2f2482;
+$primary-navbar: #100a33;
 $secondary: #272e39;
 $danger: #cf4670;
 $primary-btn-indicator: #6e1977 !default;
@@ -29,7 +30,7 @@ $sidebar-level3-offset: -3rem !default;
 $sidebar-top-offset: calc(#{$navbar-top-height} + #{$navbar-main-height}) !default;
 
 // Light sidebar
-$sidebar-light-bg: #100a33;
+$sidebar-light-bg: $primary-navbar;
 $sidebar-light-color: $white;
 $sidebar-light-hover-color: $white;
 $sidebar-light-hover-bg: $primary-light;
@@ -64,7 +65,23 @@ $theme-colors: (
 $link-color:                theme-color("primary");
 $link-hover-color:          darken($link-color, 15%);
 
+$component-active-color:    $white;
+$component-active-bg:       theme-color("primary");
+
+// Pagination
+$pagination-color:                  $link-color;
+
+$pagination-hover-color:            $link-hover-color;
+
+$pagination-active-color:           $component-active-color;
+$pagination-active-bg:              $component-active-bg;
+$pagination-active-border-color:    $pagination-active-bg;
+
 @import "itas/header";
 @import "itas/sidebar";
 @import "itas/card";
 @import "itas/list-page";
+
+body {
+  background-color: $main-bg !important;
+}
