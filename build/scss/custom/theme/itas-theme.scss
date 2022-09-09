@@ -1,0 +1,38 @@
+/*!
+ *   AdminLTE v3.2.0
+ *   Theme: ITAs
+ *   Author: TK
+ */
+
+// Bootstrap
+// ---------------------------------------------------
+@import "~bootstrap/scss/functions";
+@import "../../bootstrap-variables";
+
+@import "itas/variable";
+
+@import "~bootstrap/scss/bootstrap";
+// Variables and Mixins
+// ---------------------------------------------------
+@import "../../variables";
+@import "../../variables-alt";
+@import "../../mixins";
+@import "../../parts/core";
+@import "../../parts/components";
+@import "../../parts/extra-components";
+@import "../../parts/pages";
+@import "../../parts/plugins";
+@import "../../parts/miscellaneous";
+
+// we custom
+@import "../custom-header";
+@import "../custom-sidebar";
+@import "../custom-page";
+@import "../button-state";
+
+// theme custom
+@import "itas/header";
+@import "itas/sidebar";
+@import "itas/card";
+@import "itas/list-page";
+@import "itas/footer";

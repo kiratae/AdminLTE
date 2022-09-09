@@ -4,6 +4,7 @@ $primary-light: #7c6bf7;
 $primary-dark: #4434bb;
 $primary-darken: #2f2482;
 $primary-navbar: #100a33;
+$primary2: #264391;
 $secondary: #272e39;
 $danger: #cf4670;
 $primary-btn-indicator: #6e1977 !default;
@@ -76,11 +77,6 @@ $pagination-hover-color:            $link-hover-color;
 $pagination-active-color:           $component-active-color;
 $pagination-active-bg:              $component-active-bg;
 $pagination-active-border-color:    $pagination-active-bg;
-
-@import "itas/header";
-@import "itas/sidebar";
-@import "itas/card";
-@import "itas/list-page";
 
 body {
   background-color: $main-bg !important;

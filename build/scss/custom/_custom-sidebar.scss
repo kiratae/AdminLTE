@@ -5,6 +5,7 @@
       display: none !important;
       &.nav-sidebar-mini {
         display: block !important;
+        margin-bottom: 10rem;
         > .nav-item {
           height: 4.5rem;
           &.dropright.show > .nav-link {
@@ -134,16 +135,26 @@
     // }
   }
 }
+body.layout-fixed{
+  .main-sidebar{
+    top: $sidebar-top-offset !important;
+  }
+}
 .main-sidebar {
-  // top: $sidebar-top-offset !important;
   z-index: 1037 !important;
-  min-height: 100vh !important;
-  height: calc(100% + #{$sidebar-top-offset}) !important;
-  padding-bottom: 300px;
+  // min-height: 100vh !important;
+  // height: calc(100% + #{$sidebar-top-offset}) !important;
+  // .sidebar {
+  //   height: 100% !important;
+  //   margin-bottom: 8rem;
+  // }
   .nav-sidebar {
     display: block !important;
     &.nav-sidebar-mini {
       display: none !important;
+    }
+    >.nav-item .nav-icon{
+      width: 1.98rem;
     }
   }
 }

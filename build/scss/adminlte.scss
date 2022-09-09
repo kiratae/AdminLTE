@@ -9,24 +9,17 @@
 // ---------------------------------------------------
 @import "~bootstrap/scss/functions";
 @import "bootstrap-variables";
-
-@import "custom/theme/itas-theme";
-
 @import "~bootstrap/scss/bootstrap";
+
 // Variables and Mixins
 // ---------------------------------------------------
 @import "variables";
 @import "variables-alt";
 @import "mixins";
+
 @import "parts/core";
 @import "parts/components";
 @import "parts/extra-components";
 @import "parts/pages";
 @import "parts/plugins";
 @import "parts/miscellaneous";
-
-// we custom
-@import "custom/custom-header";
-@import "custom/custom-sidebar";
-@import "custom/custom-page";
-@import "custom/button-state";
