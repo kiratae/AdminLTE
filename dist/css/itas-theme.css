@@ -56290,6 +56290,65 @@ body.layout-fixed .main-sidebar {
   }
 }
 
+.we-form-app .we-form-app-table > .we-form-app-table-header {
+  background: #5847d7;
+  color: #fff;
+}
+
+.we-form-app .we-form-app-table .question-lvl-1:not(:last-child) {
+  border-bottom: 1px solid #a49be9;
+}
+
+.we-form-app .we-form-app-table .question-lvl-1 > .question-cell {
+  color: #3c2ac1;
+  background: #cac5f2;
+}
+
+.we-form-app .we-form-app-table .question-lvl-2:not(:last-child) {
+  border-bottom: 1px solid #b7b0ee;
+}
+
+.we-form-app .we-form-app-table .question-lvl-2 > .question-cell {
+  color: #3525ac;
+  background: #dddaf7;
+}
+
+.we-form-app .we-form-app-table .question-lvl-3:not(:last-child) {
+  border-bottom: 1px solid #cac5f2;
+}
+
+.we-form-app .we-form-app-table .question-lvl-3 > .question-cell {
+  color: #2f2197;
+  background: #f0effb;
+}
+
+.we-form-app .we-form-app-table .question-lvl-4:not(:last-child) {
+  border-bottom: 1px solid #dddaf7;
+}
+
+.we-form-app .we-form-app-table .question-lvl-4 > .question-cell {
+  color: #281c82;
+  background: white;
+}
+
+.we-form-app .we-form-app-table .question-lvl-5:not(:last-child) {
+  border-bottom: 1px solid #f0effb;
+}
+
+.we-form-app .we-form-app-table .question-lvl-5 > .question-cell {
+  color: #22186d;
+  background: white;
+}
+
+.we-form-app .we-form-app-table .question-lvl-6:not(:last-child) {
+  border-bottom: 1px solid white;
+}
+
+.we-form-app .we-form-app-table .question-lvl-6 > .question-cell {
+  color: #1b1358;
+  background: white;
+}
+
 .layout-navbar-fixed .wrapper .main-header {
   left: 0 !important;
   position: fixed !important;
