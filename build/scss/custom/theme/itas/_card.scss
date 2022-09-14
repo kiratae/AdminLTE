@@ -10,23 +10,6 @@
     > .card-title {
       font-size: 20px !important;
       font-weight: 400 !important;
-
-      > .circle {
-        width: 50px;
-        height: 50px;
-        padding: 10px 16px;
-        border-radius: 25px;
-        font-size: 18px;
-        line-height: 1.33;
-        display: inline-block;
-        margin-right: 10px;
-        color: $gray-400;
-        background-color: transparent;
-        border: 1px solid $gray-400;
-        > i.fa {
-          margin-top: 5px;
-        }
-      }
     }
   }
 
@@ -34,5 +17,39 @@
     padding: 25px;
     border-top: 1px solid $card-content-border-color;
     border-bottom: 1px solid $card-content-border-color;
+  }
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  border-radius: 25px;
+  font-size: 18px;
+  line-height: 1.33;
+  display: inline-block;
+  margin-right: 10px;
+  color: $gray-600;
+  background-color: transparent;
+  border: 1px solid $gray-600;
+  > i.fa {
+    margin-top: 5px;
+  }
+}
+
+#weTab {
+  border-bottom: none;
+  .nav-item {
+    .nav-link {
+      border-radius: 0;
+      background-color: $white;
+      &.active {
+        background-color: $primary;
+        color: $white;
+      }
+    }
+    &:not(:last-child) {
+      margin-right: .5rem;
+    }
   }
 }

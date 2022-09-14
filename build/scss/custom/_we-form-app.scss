@@ -1,61 +1,149 @@
 .we-form-app {
+  .section-nav {
+    .nav-link {
+      background: $white;
+      border: 1px solid $gray-300;
+      &.active {
+        background: $primary-navbar;
+        border: 1px solid $primary-navbar;
+      }
+      &:hover {
+        color: $white;
+        background: $primary;
+        border: 1px solid $primary;
+      }
+    }
+  }
   .we-form-app-table {
     > .we-form-app-table-header {
       background: $primary;
       color: $white;
     }
+    [data-toggle="collapse"] {
+      &:not(.collapsed) {
+        i.fa-chevron-down {
+          display: none;
+        }
+        i.fa-chevron-up {
+          display: block;
+        }
+      }
+      &.collapsed {
+        i.fa-chevron-down {
+          display: block;
+        }
+        i.fa-chevron-up {
+          display: none;
+        }
+      }
+    }
+    .question-cell {
+      min-height: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &.tool {
+        flex-direction: row;
+        justify-content: space-between;
+        .btn:not([data-toggle="collapse"]) {
+          padding: .375rem .5rem;
+          border: none;
+          border-radius: 0;
+          transition: padding, border-width 150ms ease-out;
+          i {
+            font-size: 1.25rem;
+          }
+          &:hover {
+            padding-top: 0;
+            padding-bottom: .5rem;
+            border-bottom: 4px solid $primary;
+            transition: padding, border-width 150ms ease-in;
+          }
+        }
+      }
+      &.text-center {
+        align-items: center;
+      }
+      i.is-required-icon {
+        color: #3887C6;
+      }
+    }
     .question-lvl-1 {
       &:not(:last-child) {
         border-bottom: 1px solid lighten($primary, 20%);
       }
+      background: lighten($primary, 30%);
       > .question-cell {
           color: darken($primary, 10%);
           background: lighten($primary, 30%);
+          .modify-tool > .btn {
+            color: darken($primary, 10%);
+          }
       }
     }
     .question-lvl-2 {
       &:not(:last-child) {
         border-bottom: 1px solid lighten($primary, 25%);
       }
+      background: lighten($primary, 40%);
       > .question-cell {
         color: darken($primary, 15%);
-        background: lighten($primary, 35%);
+        background: lighten($primary, 40%);
+        .modify-tool > .btn {
+          color: darken($primary, 15%);
+        }
       }
     } 
     .question-lvl-3 {
       &:not(:last-child) {
         border-bottom: 1px solid lighten($primary, 30%);
       }
+      background: lighten($primary, 50%);
       > .question-cell {
         color: darken($primary, 20%);
-        background: lighten($primary, 40%);
+        background: lighten($primary, 50%);
+        .modify-tool > .btn {
+          color: darken($primary, 20%);
+        }
       }
     } 
     .question-lvl-4 {
+      background: lighten($primary, 60%);
       &:not(:last-child) {
         border-bottom: 1px solid lighten($primary, 35%);
       }
       > .question-cell {
         color: darken($primary, 25%);
-        background: lighten($primary, 45%);
+        background: lighten($primary, 60%);
+        .modify-tool > .btn {
+          color: darken($primary, 25%);
+        }
       }
     } 
     .question-lvl-5 {
+      background: lighten($primary, 70%);
       &:not(:last-child) {
         border-bottom: 1px solid lighten($primary, 40%);
       }
       > .question-cell {
         color: darken($primary, 30%);
-        background: lighten($primary, 50%);
+        background: lighten($primary, 70%);
+        .modify-tool > .btn {
+          color: darken($primary, 30%);
+        }
       }
     } 
     .question-lvl-6 {
+      background: lighten($primary, 80%);
       &:not(:last-child) {
         border-bottom: 1px solid lighten($primary, 45%);
       }
       > .question-cell  {
         color: darken($primary, 35%);
-        background: lighten($primary, 55%);
+        background: lighten($primary, 80%);
+        .modify-tool > .btn {
+          color: darken($primary, 35%);
+        }
       }
     } 
   }
