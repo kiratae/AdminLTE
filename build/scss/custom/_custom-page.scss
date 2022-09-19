@@ -103,3 +103,12 @@
     }
   }
 }
+
+.btn {
+  &[class*="btn-"]:not(.btn-icon) {
+    min-width: 150px !important;
+  }
+  &.fit {
+    min-width: min-content !important;
+  }
+}

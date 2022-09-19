@@ -66,7 +66,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Prompt", "Roboto", sans-serif;
+  font-family: "wefont", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -6659,7 +6659,7 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Prompt", "Roboto", sans-serif;
+  font-family: "wefont", sans-serif;
   font-style: normal;
   font-weight: 300;
   line-height: 1.5;
@@ -6772,7 +6772,7 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Prompt", "Roboto", sans-serif;
+  font-family: "wefont", sans-serif;
   font-style: normal;
   font-weight: 300;
   line-height: 1.5;
@@ -41827,7 +41827,7 @@ select.form-control-sm ~ .select2-container--default .select2-selection--multipl
 }
 
 .mapael .mapTooltip {
-  font-family: "Prompt", "Roboto", sans-serif;
+  font-family: "wefont", sans-serif;
   font-style: normal;
   font-weight: 300;
   line-height: 1.5;
@@ -56178,6 +56178,16 @@ body.layout-fixed .main-sidebar {
   font-weight: 400;
 }
 
+.btn[class*="btn-"]:not(.btn-icon) {
+  min-width: 150px !important;
+}
+
+.btn.fit {
+  min-width: -webkit-min-content !important;
+  min-width: -moz-min-content !important;
+  min-width: min-content !important;
+}
+
 .btn-multiple-state {
   position: relative;
   transition: opacity 500ms;
@@ -56291,23 +56301,23 @@ body.layout-fixed .main-sidebar {
 }
 
 .we-form-app .section-nav .nav-link {
-  background: #fff;
+  background-color: #fff;
   border: 1px solid #dee2e6;
 }
 
 .we-form-app .section-nav .nav-link.active {
-  background: #100a33;
+  background-color: #100a33;
   border: 1px solid #100a33;
 }
 
 .we-form-app .section-nav .nav-link:hover {
   color: #fff;
-  background: #683498;
+  background-color: #683498;
   border: 1px solid #683498;
 }
 
 .we-form-app .we-form-app-table > .we-form-app-table-header {
-  background: #683498;
+  background-color: #683498;
   color: #fff;
 }
 
@@ -56335,6 +56345,7 @@ body.layout-fixed .main-sidebar {
   flex-direction: column;
   -ms-flex-pack: center;
   justify-content: center;
+  transition: background-color, color 150ms ease;
 }
 
 .we-form-app .we-form-app-table .question-cell.tool {
@@ -56367,12 +56378,26 @@ body.layout-fixed .main-sidebar {
   align-items: center;
 }
 
-.we-form-app .we-form-app-table .question-cell i.is-required-icon {
-  color: #3887C6;
+.we-form-app .we-form-app-table [class*="question-lvl-"] {
+  transition: background-color, opacity 150ms ease;
+}
+
+.we-form-app .we-form-app-table [class*="question-lvl-"].deleting {
+  background-color: #e9abbe;
+  opacity: .6;
+}
+
+.we-form-app .we-form-app-table [class*="question-lvl-"].deleting > .question-cell {
+  background-color: #e9abbe;
+  color: #495057;
+}
+
+.we-form-app .we-form-app-table [class*="question-lvl-"].deleting > .question-cell.tool {
+  display: none;
 }
 
 .we-form-app .we-form-app-table .question-lvl-1 {
-  background: #b48dd8;
+  background-color: #b48dd8;
 }
 
 .we-form-app .we-form-app-table .question-lvl-1:not(:last-child) {
@@ -56381,7 +56406,7 @@ body.layout-fixed .main-sidebar {
 
 .we-form-app .we-form-app-table .question-lvl-1 > .question-cell {
   color: #4e2772;
-  background: #b48dd8;
+  background-color: #b48dd8;
 }
 
 .we-form-app .we-form-app-table .question-lvl-1 > .question-cell .modify-tool > .btn {
@@ -56389,7 +56414,7 @@ body.layout-fixed .main-sidebar {
 }
 
 .we-form-app .we-form-app-table .question-lvl-2 {
-  background: #cdb3e5;
+  background-color: #cdb3e5;
 }
 
 .we-form-app .we-form-app-table .question-lvl-2:not(:last-child) {
@@ -56398,7 +56423,7 @@ body.layout-fixed .main-sidebar {
 
 .we-form-app .we-form-app-table .question-lvl-2 > .question-cell {
   color: #41215f;
-  background: #cdb3e5;
+  background-color: #cdb3e5;
 }
 
 .we-form-app .we-form-app-table .question-lvl-2 > .question-cell .modify-tool > .btn {
@@ -56406,7 +56431,7 @@ body.layout-fixed .main-sidebar {
 }
 
 .we-form-app .we-form-app-table .question-lvl-3 {
-  background: #e6d9f2;
+  background-color: #e6d9f2;
 }
 
 .we-form-app .we-form-app-table .question-lvl-3:not(:last-child) {
@@ -56415,7 +56440,7 @@ body.layout-fixed .main-sidebar {
 
 .we-form-app .we-form-app-table .question-lvl-3 > .question-cell {
   color: #341a4c;
-  background: #e6d9f2;
+  background-color: #e6d9f2;
 }
 
 .we-form-app .we-form-app-table .question-lvl-3 > .question-cell .modify-tool > .btn {
@@ -56423,7 +56448,7 @@ body.layout-fixed .main-sidebar {
 }
 
 .we-form-app .we-form-app-table .question-lvl-4 {
-  background: white;
+  background-color: white;
 }
 
 .we-form-app .we-form-app-table .question-lvl-4:not(:last-child) {
@@ -56432,7 +56457,7 @@ body.layout-fixed .main-sidebar {
 
 .we-form-app .we-form-app-table .question-lvl-4 > .question-cell {
   color: #271439;
-  background: white;
+  background-color: white;
 }
 
 .we-form-app .we-form-app-table .question-lvl-4 > .question-cell .modify-tool > .btn {
@@ -56440,7 +56465,7 @@ body.layout-fixed .main-sidebar {
 }
 
 .we-form-app .we-form-app-table .question-lvl-5 {
-  background: white;
+  background-color: white;
 }
 
 .we-form-app .we-form-app-table .question-lvl-5:not(:last-child) {
@@ -56449,7 +56474,7 @@ body.layout-fixed .main-sidebar {
 
 .we-form-app .we-form-app-table .question-lvl-5 > .question-cell {
   color: #1a0d26;
-  background: white;
+  background-color: white;
 }
 
 .we-form-app .we-form-app-table .question-lvl-5 > .question-cell .modify-tool > .btn {
@@ -56457,7 +56482,7 @@ body.layout-fixed .main-sidebar {
 }
 
 .we-form-app .we-form-app-table .question-lvl-6 {
-  background: white;
+  background-color: white;
 }
 
 .we-form-app .we-form-app-table .question-lvl-6:not(:last-child) {
@@ -56466,11 +56491,15 @@ body.layout-fixed .main-sidebar {
 
 .we-form-app .we-form-app-table .question-lvl-6 > .question-cell {
   color: #0d0713;
-  background: white;
+  background-color: white;
 }
 
 .we-form-app .we-form-app-table .question-lvl-6 > .question-cell .modify-tool > .btn {
   color: #0d0713;
+}
+
+.we-form-app i.is-required-icon {
+  color: #3887C6;
 }
 
 .layout-navbar-fixed .wrapper .main-header {
