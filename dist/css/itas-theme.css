@@ -56188,6 +56188,171 @@ body.layout-fixed .main-sidebar {
   min-width: min-content !important;
 }
 
+/* Toaster */
+.sidebar-mini #toast-container {
+  left: calc(250px + 12px);
+}
+
+.sidebar-mini.sidebar-collapse #toast-container {
+  left: calc(6rem + 12px);
+}
+
+#toast-container > div {
+  opacity: 1 !important;
+  color: #212529;
+  border-radius: 4px;
+  box-shadow: 0 2px 13px 0 #6c757d;
+  padding: 20px;
+  padding: 25px 25px 25px 80px;
+  width: 370px;
+}
+
+#toast-container .toast-message {
+  font-size: 16px !important;
+  margin-top: 2px;
+}
+
+#toast-container .toast-message ul {
+  font-size: 12px !important;
+  color: #cf4670;
+  padding-left: 15px;
+}
+
+#toast-container > .toast-success {
+  background-color: #86e29b !important;
+  border: 1px solid #48d368;
+  border-left: 6px solid #28a745;
+  background-image: url("../img/custom/toast_icon_success.png") !important;
+  background-position: 22px 13px !important;
+}
+
+#toast-container > .toast-error {
+  background-color: #efbfce !important;
+  border: 1px solid #df839f;
+  border-left: 6px solid #cf4670;
+  background-image: url("../img/custom/toast_icon_fail.png") !important;
+  background-position: 22px 13px !important;
+}
+
+#toast-container .toast-close-button:before {
+  color: #adb5bd;
+  font-size: 2rem;
+}
+
+.btn-default {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  box-shadow: none;
+}
+
+.btn-default:hover {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+.btn-default:focus, .btn-default.focus {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+  box-shadow: 0 0 0 0 rgba(130, 138, 145, 0.5);
+}
+
+.btn-default.disabled, .btn-default:disabled {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-default:not(:disabled):not(.disabled):active, .btn-default:not(:disabled):not(.disabled).active,
+.show > .btn-default.dropdown-toggle {
+  color: #fff;
+  background-color: #545b62;
+  border-color: #4e555b;
+}
+
+.btn-default:not(:disabled):not(.disabled):active:focus, .btn-default:not(:disabled):not(.disabled).active:focus,
+.show > .btn-default.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0 rgba(130, 138, 145, 0.5);
+}
+
+.swal2-container .swal2-actions .swal2-confirm.btn-danger {
+  color: #fff;
+  background-color: #cf4670;
+  border-color: #cf4670;
+  box-shadow: none;
+}
+
+.swal2-container .swal2-actions .swal2-confirm.btn-danger:hover {
+  color: #fff;
+  background-color: #be315c;
+  border-color: #b32f57;
+}
+
+.swal2-container .swal2-actions .swal2-confirm.btn-danger:focus, .swal2-container .swal2-actions .swal2-confirm.btn-danger.focus {
+  color: #fff;
+  background-color: #be315c;
+  border-color: #b32f57;
+  box-shadow: 0 0 0 0 rgba(214, 98, 133, 0.5);
+}
+
+.swal2-container .swal2-actions .swal2-confirm.btn-danger.disabled, .swal2-container .swal2-actions .swal2-confirm.btn-danger:disabled {
+  color: #fff;
+  background-color: #cf4670;
+  border-color: #cf4670;
+}
+
+.swal2-container .swal2-actions .swal2-confirm.btn-danger:not(:disabled):not(.disabled):active, .swal2-container .swal2-actions .swal2-confirm.btn-danger:not(:disabled):not(.disabled).active,
+.show > .swal2-container .swal2-actions .swal2-confirm.btn-danger.dropdown-toggle {
+  color: #fff;
+  background-color: #b32f57;
+  border-color: #a92c52;
+}
+
+.swal2-container .swal2-actions .swal2-confirm.btn-danger:not(:disabled):not(.disabled):active:focus, .swal2-container .swal2-actions .swal2-confirm.btn-danger:not(:disabled):not(.disabled).active:focus,
+.show > .swal2-container .swal2-actions .swal2-confirm.btn-danger.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0 rgba(214, 98, 133, 0.5);
+}
+
+.swal2-container .swal2-actions .swal2-cancel.btn-default {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  box-shadow: none;
+}
+
+.swal2-container .swal2-actions .swal2-cancel.btn-default:hover {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+.swal2-container .swal2-actions .swal2-cancel.btn-default:focus, .swal2-container .swal2-actions .swal2-cancel.btn-default.focus {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+  box-shadow: 0 0 0 0 rgba(130, 138, 145, 0.5);
+}
+
+.swal2-container .swal2-actions .swal2-cancel.btn-default.disabled, .swal2-container .swal2-actions .swal2-cancel.btn-default:disabled {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.swal2-container .swal2-actions .swal2-cancel.btn-default:not(:disabled):not(.disabled):active, .swal2-container .swal2-actions .swal2-cancel.btn-default:not(:disabled):not(.disabled).active,
+.show > .swal2-container .swal2-actions .swal2-cancel.btn-default.dropdown-toggle {
+  color: #fff;
+  background-color: #545b62;
+  border-color: #4e555b;
+}
+
+.swal2-container .swal2-actions .swal2-cancel.btn-default:not(:disabled):not(.disabled):active:focus, .swal2-container .swal2-actions .swal2-cancel.btn-default:not(:disabled):not(.disabled).active:focus,
+.show > .swal2-container .swal2-actions .swal2-cancel.btn-default.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0 rgba(130, 138, 145, 0.5);
+}
+
 .btn-multiple-state {
   position: relative;
   transition: opacity 500ms;
@@ -56396,106 +56561,189 @@ body.layout-fixed .main-sidebar {
   display: none;
 }
 
+.we-form-app .we-form-app-table [class*="question-lvl-"].leaf-node > .question-cell {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+.we-form-app .we-form-app-table [class*="question-lvl-"].leaf-node > .question-cell .modify-tool > .btn {
+  color: #000 !important;
+}
+
 .we-form-app .we-form-app-table .question-lvl-1 {
   background-color: #b48dd8;
 }
 
-.we-form-app .we-form-app-table .question-lvl-1:not(:last-child) {
-  border-bottom: 1px solid #9b67cb;
-}
-
 .we-form-app .we-form-app-table .question-lvl-1 > .question-cell {
-  color: #4e2772;
   background-color: #b48dd8;
 }
 
-.we-form-app .we-form-app-table .question-lvl-1 > .question-cell .modify-tool > .btn {
-  color: #4e2772;
-}
-
 .we-form-app .we-form-app-table .question-lvl-2 {
-  background-color: #cdb3e5;
-}
-
-.we-form-app .we-form-app-table .question-lvl-2:not(:last-child) {
-  border-bottom: 1px solid #a87ad2;
+  background-color: #b995db;
 }
 
 .we-form-app .we-form-app-table .question-lvl-2 > .question-cell {
-  color: #41215f;
-  background-color: #cdb3e5;
-}
-
-.we-form-app .we-form-app-table .question-lvl-2 > .question-cell .modify-tool > .btn {
-  color: #41215f;
+  background-color: #b995db;
 }
 
 .we-form-app .we-form-app-table .question-lvl-3 {
-  background-color: #e6d9f2;
-}
-
-.we-form-app .we-form-app-table .question-lvl-3:not(:last-child) {
-  border-bottom: 1px solid #b48dd8;
+  background-color: #be9cdd;
 }
 
 .we-form-app .we-form-app-table .question-lvl-3 > .question-cell {
-  color: #341a4c;
-  background-color: #e6d9f2;
-}
-
-.we-form-app .we-form-app-table .question-lvl-3 > .question-cell .modify-tool > .btn {
-  color: #341a4c;
+  background-color: #be9cdd;
 }
 
 .we-form-app .we-form-app-table .question-lvl-4 {
-  background-color: white;
-}
-
-.we-form-app .we-form-app-table .question-lvl-4:not(:last-child) {
-  border-bottom: 1px solid #c1a0df;
+  background-color: #dccaed;
 }
 
 .we-form-app .we-form-app-table .question-lvl-4 > .question-cell {
-  color: #271439;
-  background-color: white;
-}
-
-.we-form-app .we-form-app-table .question-lvl-4 > .question-cell .modify-tool > .btn {
-  color: #271439;
+  background-color: #dccaed;
 }
 
 .we-form-app .we-form-app-table .question-lvl-5 {
-  background-color: white;
-}
-
-.we-form-app .we-form-app-table .question-lvl-5:not(:last-child) {
-  border-bottom: 1px solid #cdb3e5;
+  background-color: #e1d1ef;
 }
 
 .we-form-app .we-form-app-table .question-lvl-5 > .question-cell {
-  color: #1a0d26;
-  background-color: white;
-}
-
-.we-form-app .we-form-app-table .question-lvl-5 > .question-cell .modify-tool > .btn {
-  color: #1a0d26;
+  background-color: #e1d1ef;
 }
 
 .we-form-app .we-form-app-table .question-lvl-6 {
-  background-color: white;
-}
-
-.we-form-app .we-form-app-table .question-lvl-6:not(:last-child) {
-  border-bottom: 1px solid #dac6ec;
+  background-color: #e6d9f2;
 }
 
 .we-form-app .we-form-app-table .question-lvl-6 > .question-cell {
-  color: #0d0713;
+  background-color: #e6d9f2;
+}
+
+.we-form-app .we-form-app-table .question-lvl-7 {
+  background-color: #ebe1f5;
+}
+
+.we-form-app .we-form-app-table .question-lvl-7 > .question-cell {
+  background-color: #ebe1f5;
+}
+
+.we-form-app .we-form-app-table .question-lvl-8 {
+  background-color: #f0e8f7;
+}
+
+.we-form-app .we-form-app-table .question-lvl-8 > .question-cell {
+  background-color: #f0e8f7;
+}
+
+.we-form-app .we-form-app-table .question-lvl-9 {
+  background-color: #f5f0fa;
+}
+
+.we-form-app .we-form-app-table .question-lvl-9 > .question-cell {
+  background-color: #f5f0fa;
+}
+
+.we-form-app .we-form-app-table .question-lvl-10 {
+  background-color: #faf7fc;
+}
+
+.we-form-app .we-form-app-table .question-lvl-10 > .question-cell {
+  background-color: #faf7fc;
+}
+
+.we-form-app .we-form-app-table .question-lvl-11 {
   background-color: white;
 }
 
+.we-form-app .we-form-app-table .question-lvl-11 > .question-cell {
+  background-color: white;
+}
+
+.we-form-app .we-form-app-table .question-lvl-1 > .question-cell {
+  color: #b48dd8;
+}
+
+.we-form-app .we-form-app-table .question-lvl-1 > .question-cell .modify-tool > .btn {
+  color: #b48dd8;
+}
+
+.we-form-app .we-form-app-table .question-lvl-2 > .question-cell {
+  color: #b995db;
+}
+
+.we-form-app .we-form-app-table .question-lvl-2 > .question-cell .modify-tool > .btn {
+  color: #b995db;
+}
+
+.we-form-app .we-form-app-table .question-lvl-3 > .question-cell {
+  color: #be9cdd;
+}
+
+.we-form-app .we-form-app-table .question-lvl-3 > .question-cell .modify-tool > .btn {
+  color: #be9cdd;
+}
+
+.we-form-app .we-form-app-table .question-lvl-4 > .question-cell {
+  color: #dccaed;
+}
+
+.we-form-app .we-form-app-table .question-lvl-4 > .question-cell .modify-tool > .btn {
+  color: #dccaed;
+}
+
+.we-form-app .we-form-app-table .question-lvl-5 > .question-cell {
+  color: #e1d1ef;
+}
+
+.we-form-app .we-form-app-table .question-lvl-5 > .question-cell .modify-tool > .btn {
+  color: #e1d1ef;
+}
+
+.we-form-app .we-form-app-table .question-lvl-6 > .question-cell {
+  color: #e6d9f2;
+}
+
 .we-form-app .we-form-app-table .question-lvl-6 > .question-cell .modify-tool > .btn {
-  color: #0d0713;
+  color: #e6d9f2;
+}
+
+.we-form-app .we-form-app-table .question-lvl-7 > .question-cell {
+  color: #ebe1f5;
+}
+
+.we-form-app .we-form-app-table .question-lvl-7 > .question-cell .modify-tool > .btn {
+  color: #ebe1f5;
+}
+
+.we-form-app .we-form-app-table .question-lvl-8 > .question-cell {
+  color: #f0e8f7;
+}
+
+.we-form-app .we-form-app-table .question-lvl-8 > .question-cell .modify-tool > .btn {
+  color: #f0e8f7;
+}
+
+.we-form-app .we-form-app-table .question-lvl-9 > .question-cell {
+  color: #f5f0fa;
+}
+
+.we-form-app .we-form-app-table .question-lvl-9 > .question-cell .modify-tool > .btn {
+  color: #f5f0fa;
+}
+
+.we-form-app .we-form-app-table .question-lvl-10 > .question-cell {
+  color: #faf7fc;
+}
+
+.we-form-app .we-form-app-table .question-lvl-10 > .question-cell .modify-tool > .btn {
+  color: #faf7fc;
+}
+
+.we-form-app .we-form-app-table .question-lvl-11 > .question-cell {
+  color: white;
+}
+
+.we-form-app .we-form-app-table .question-lvl-11 > .question-cell .modify-tool > .btn {
+  color: white;
 }
 
 .we-form-app i.is-required-icon {

@@ -1,4 +1,39 @@
 $requireIcon: #3887C6;
+$question-lvl-bg-colors: () !default;
+$question-lvl-bg-colors: map-merge((
+  "1": lighten($primary, 30%),
+  "2": lighten($primary, 34%),
+  "3": lighten($primary, 38%),
+  "4": lighten($primary, 42%),
+  "5": lighten($primary, 46%),
+  "6": lighten($primary, 52%),
+  "7": lighten($primary, 56%),
+  "8": lighten($primary, 60%)
+), $question-lvl-bg-colors);
+
+$question-lvl-colors: () !default;
+$question-lvl-colors: map-merge((
+  "1": darken($primary, 10%),
+  "2": darken($primary, 12%),
+  "3": darken($primary, 14%),
+  "4": darken($primary, 16%),
+  "5": darken($primary, 18%),
+  "6": darken($primary, 20%),
+  "7": darken($primary, 22%),
+  "8": darken($primary, 24%)
+), $question-lvl-colors);
+
+$question-lvl-border-colors: () !default;
+$question-lvl-border-colors: map-merge((
+  "1": lighten($primary, 20%),
+  "2": lighten($primary, 24%),
+  "3": lighten($primary, 28%),
+  "4": lighten($primary, 32%),
+  "5": lighten($primary, 36%),
+  "6": lighten($primary, 42%),
+  "7": lighten($primary, 46%),
+  "8": lighten($primary, 50%)
+), $question-lvl-border-colors);
 
 .we-form-app {
   .section-nav {
@@ -81,85 +116,40 @@ $requireIcon: #3887C6;
           }
         }
       }
-    }
-    .question-lvl-1 {
-      &:not(:last-child) {
-        border-bottom: 1px solid lighten($primary, 20%);
-      }
-      background-color: lighten($primary, 30%);
-      > .question-cell {
-          color: darken($primary, 10%);
-          background-color: lighten($primary, 30%);
+      &.leaf-node {
+        > .question-cell {
+          color: $black !important;
+          background-color: $white !important;
           .modify-tool > .btn {
-            color: darken($primary, 10%);
+            color: $black !important;
           }
+        }
       }
     }
-    .question-lvl-2 {
-      &:not(:last-child) {
-        border-bottom: 1px solid lighten($primary, 25%);
-      }
-      background-color: lighten($primary, 40%);
-      > .question-cell {
-        color: darken($primary, 15%);
-        background-color: lighten($primary, 40%);
-        .modify-tool > .btn {
-          color: darken($primary, 15%);
+
+    @each $lvl, $color in $question-lvl-bg-colors {
+      .question-lvl-#{$lvl} {
+        background-color: $color;
+        > .question-cell {
+          background-color: $color;
         }
       }
-    } 
-    .question-lvl-3 {
-      &:not(:last-child) {
-        border-bottom: 1px solid lighten($primary, 30%);
-      }
-      background-color: lighten($primary, 50%);
-      > .question-cell {
-        color: darken($primary, 20%);
-        background-color: lighten($primary, 50%);
+    }
+
+    @each $lvl, $color in $question-lvl-colors {
+      .question-lvl-#{$lvl} > .question-cell {
+        color: $color;
         .modify-tool > .btn {
-          color: darken($primary, 20%);
+          color: $color;
         }
       }
-    } 
-    .question-lvl-4 {
-      background-color: lighten($primary, 60%);
-      &:not(:last-child) {
-        border-bottom: 1px solid lighten($primary, 35%);
+    }
+
+    @each $lvl, $color in $question-border-colors {
+      .question-lvl-#{$lvl}:not(:last-child) {
+        border-bottom: 1px solid $color;
       }
-      > .question-cell {
-        color: darken($primary, 25%);
-        background-color: lighten($primary, 60%);
-        .modify-tool > .btn {
-          color: darken($primary, 25%);
-        }
-      }
-    } 
-    .question-lvl-5 {
-      background-color: lighten($primary, 70%);
-      &:not(:last-child) {
-        border-bottom: 1px solid lighten($primary, 40%);
-      }
-      > .question-cell {
-        color: darken($primary, 30%);
-        background-color: lighten($primary, 70%);
-        .modify-tool > .btn {
-          color: darken($primary, 30%);
-        }
-      }
-    } 
-    .question-lvl-6 {
-      background-color: lighten($primary, 80%);
-      &:not(:last-child) {
-        border-bottom: 1px solid lighten($primary, 45%);
-      }
-      > .question-cell  {
-        color: darken($primary, 35%);
-        background-color: lighten($primary, 80%);
-        .modify-tool > .btn {
-          color: darken($primary, 35%);
-        }
-      }
-    } 
+    }
   }
   i.is-required-icon {
     color: $requireIcon;
