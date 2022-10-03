@@ -145,7 +145,7 @@ $question-lvl-border-colors: map-merge((
       }
     }
 
-    @each $lvl, $color in $question-border-colors {
+    @each $lvl, $color in $question-lvl-border-colors {
       .question-lvl-#{$lvl}:not(:last-child) {
         border-bottom: 1px solid $color;
       }
