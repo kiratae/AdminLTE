@@ -7,6 +7,9 @@
       padding: 10px !important;
     }
   }
+  tbody tr.row-data:hover {
+    background-color: opacify(lighten($primary, 40%), .45);
+  }
   tbody tr td {
     font-weight: $font-weight-normal;
     border: none !important;
