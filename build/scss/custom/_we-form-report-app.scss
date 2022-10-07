@@ -1,0 +1,245 @@
+$form-report-app-primary: #264391;
+$form-report-app-question: linear-gradient(180deg, #eeedf7 0%, #ece9ff 100%);
+$form-report-app-sub-question: #f2f6f7;
+
+.we-form-report-app {
+  .question-card {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    .question-header {
+      border-bottom: none;
+      border-radius: 0;
+
+      &.question-bg {
+        background: $form-report-app-question;
+      }
+
+      &.sub-question-bg {
+        background: $form-report-app-sub-question;
+      }
+    }
+
+    .question-body {
+      padding-right: 0;
+      &.normal {
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+      }
+      &.has-child {
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .custom-control-input {
+    width: 1.25rem;
+    height: 1.5rem;
+  }
+
+  .custom-control-label {
+    padding-left: 0.5rem;
+
+    &::before {
+      top: 0.125rem;
+      left: -1.5rem;
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+
+    &::after {
+      top: 0;
+      left: -1.625rem;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  .slider-nav-btn {
+    width: 42px;
+    min-width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 24px;
+    border: 1px solid $form-report-app-primary;
+    color: $form-report-app-primary;
+    margin-right: 0;
+    background: transparent;
+
+    &:disabled {
+      opacity: 0.4;
+    }
+  }
+
+  .we-slide {
+    .splide__arrow--prev {
+      left: 0;
+    }
+    .splide__arrow--next {
+      right: 0;
+    }
+
+    .we-slide-nav {
+      height: 42px;
+      > .we-slide-item {
+        height: 100%;
+        cursor: pointer;
+        border: 1px solid #d1d1d1;
+        border-radius: 56px;
+        background: $white;
+        display: flex;
+        align-items: center;
+        padding: 7px;
+
+        > .order-no {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 30px;
+          min-width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          color: $white;
+          background: #9fa7ba;
+          user-select: none;
+        }
+        > .name {
+          max-width: 150px;
+          padding: 0 8px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          user-select: none;
+        }
+      }
+      &.is-active {
+        .order-no {
+          background: $form-report-app-primary;
+        }
+        .name {
+          max-width: 100%;
+        }
+      }
+    }
+
+    &.section {
+      .we-slide-nav {
+        > .we-slide-item {
+          background: $white;
+          > .name {
+            color: $form-report-app-primary;
+          }
+        }
+        &.is-active {
+          background: $form-report-app-primary;
+          .name {
+            color: $white;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .btn-draft {
+    border-radius: 56px;
+  }
+
+  .skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+  }
+  
+  @keyframes skeleton-loading {
+    0% {
+      background-color: hsl(200, 20%, 80%);
+    }
+    100% {
+      background-color: hsl(200, 20%, 95%);
+    }
+  }
+
+  .we-slide-sk {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+    justify-content: start;
+    .splide__arrow--prev {
+      left: 0;
+    }
+    .splide__arrow--next {
+      right: 0;
+    }
+
+    .we-slide-nav {
+      height: 42px;
+      &:not(:last-child){
+        margin-right: 10px;
+      }
+      > .we-slide-item {
+        height: 100%;
+        min-width: 150px;
+        border: 1px solid #d1d1d1;
+        border-radius: 56px;
+        background: $white;
+        display: flex;
+        align-items: center;
+        padding: 7px;
+        > .order-no {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 30px;
+          min-width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+        > .name {
+          width: 100%;
+          margin: 0 8px;
+          border-radius: .25rem;
+          height: 1rem;
+        }
+      }
+    }
+  }
+
+  .skeleton-text {
+    width: 100%;
+    height: 1rem;
+    margin-bottom: .5rem;
+    border-radius: .25rem;
+  }
+
+  .skeleton-radio-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+    .radio {
+      min-width: 1.25rem;
+      width: 1.25rem;
+      height: 1.25rem;
+      border: #adb5bd solid 1px;
+      border-radius: 50%;
+    }
+    .skeleton-radio {
+      width: 100%;
+      height: 1rem;
+      border-radius: .25rem;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .skeleton-card-title {
+    width: 100%;
+    height: 1.1rem;
+    border-radius: .25rem;
+  }
+}
