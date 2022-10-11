@@ -56808,7 +56808,7 @@ body.layout-fixed .main-sidebar {
   padding-bottom: .5rem;
 }
 
-.we-form-report-app .question-card.leaf-node:first-child {
+.we-form-report-app .question-card.leaf-node:not(.level-0):first-child {
   margin-top: 1rem;
 }
 
