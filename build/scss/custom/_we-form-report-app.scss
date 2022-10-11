@@ -18,6 +18,33 @@ $form-report-app-sub-question: #f2f6f7;
 
       &.sub-question-bg {
         background: $form-report-app-sub-question;
+        &.level-0 {
+          background: $form-report-app-sub-question;
+        }
+        &.level-1 {
+          background: lighten($form-report-app-sub-question, .5%);
+        }
+        &.level-2 {
+          background: lighten($form-report-app-sub-question, 1%);
+        }
+        &.level-3 {
+          background: lighten($form-report-app-sub-question, 1.5%);
+        }
+        &.level-4 {
+          background: lighten($form-report-app-sub-question, 2%);
+        }
+        &.level-5 {
+          background: lighten($form-report-app-sub-question, 2.5%);
+        }
+        &.level-6 {
+          background: lighten($form-report-app-sub-question, 3%);
+        }
+        &.level-7 {
+          background: lighten($form-report-app-sub-question, 3.5%);
+        }
+        &.level-8 {
+          background: lighten($form-report-app-sub-question, 4%);
+        }
       }
     }
 
@@ -26,13 +53,27 @@ $form-report-app-sub-question: #f2f6f7;
       &.normal {
         padding-left: 1rem;
         padding-top: 1rem;
-        padding-bottom: 0.5rem;
+        padding-bottom: .5rem;
       }
-      &.has-child {
-        padding-left: 0;
-        padding-top: 0;
-        padding-bottom: 0.5rem;
+    }
+
+    &.leaf-node {
+      &:first-child {
+        margin-top: 1rem;
       }
+      &:last-child {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .custom-control.custom-radio {
+    margin: 0 1rem;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
     }
   }
 
@@ -42,10 +83,10 @@ $form-report-app-sub-question: #f2f6f7;
   }
 
   .custom-control-label {
-    padding-left: 0.5rem;
+    padding-left: .35rem;
 
     &::before {
-      top: 0.125rem;
+      top: .125rem;
       left: -1.5rem;
       width: 1.25rem;
       height: 1.25rem;
