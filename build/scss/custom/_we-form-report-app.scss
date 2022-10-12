@@ -68,10 +68,7 @@ $form-report-app-sub-question: #f2f6f7;
   }
 
   .custom-control.custom-radio {
-    margin: 0 1rem;
-    &:first-child {
-      margin-left: 0;
-    }
+    margin-right: 1rem;
     &:last-child {
       margin-right: 0;
     }
