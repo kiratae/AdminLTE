@@ -7,6 +7,7 @@ $primary-navbar: #100a33;
 $primary2: #264391;
 $secondary: #272e39;
 $danger: #cf4670;
+$success: #26b465;
 $primary-btn-indicator: #6e1977 !default;
 
 $main-bg: #edf1f5;
@@ -61,6 +62,8 @@ $theme-colors: (
   "primary-dark": $primary-dark,
   "primary-darken": $primary-darken,
   "secondary": $secondary,
+  "danger": $danger,
+  "success": $success
 );
 
 $link-color:                theme-color("primary");
