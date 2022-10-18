@@ -57,16 +57,13 @@ $form-report-app-sub-question: #f2f6f7;
       }
       &.leaf-node {
         padding: .75rem 1.25rem;
-        margin-bottom: 3rem;
+        // margin-bottom: 3rem;
       }
     }
 
-    &.leaf-node {
-      &:not(.level-0):first-child {
-        margin-top: 1rem;
-      }
-      &:last-child {
-        margin-bottom: 1rem;
+    &:last-child {
+      .leaf-node {
+        margin-bottom: 3rem;
       }
     }
   }

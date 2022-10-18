@@ -56809,15 +56809,10 @@ body.layout-fixed .main-sidebar {
 
 .we-form-report-app .question-card .question-body.leaf-node {
   padding: .75rem 1.25rem;
+}
+
+.we-form-report-app .question-card:last-child .leaf-node {
   margin-bottom: 3rem;
-}
-
-.we-form-report-app .question-card.leaf-node:not(.level-0):first-child {
-  margin-top: 1rem;
-}
-
-.we-form-report-app .question-card.leaf-node:last-child {
-  margin-bottom: 1rem;
 }
 
 .we-form-report-app .custom-control.custom-radio {
