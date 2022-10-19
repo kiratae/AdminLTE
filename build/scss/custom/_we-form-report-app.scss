@@ -80,8 +80,15 @@ $form-report-app-sub-question: #f2f6f7;
     height: 1.5rem;
   }
 
+  .custom-control-input:disabled~.custom-control-label, 
+  .custom-control-input[disabled]~.custom-control-label{
+    color: $gray-700;
+    cursor: default;
+  }
+
   .custom-control-label {
     padding-left: .35rem;
+    cursor: pointer;
 
     &::before {
       top: .125rem;

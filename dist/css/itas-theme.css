@@ -56198,11 +56198,11 @@ body.layout-fixed .main-sidebar {
 }
 
 /* Toaster */
-.sidebar-mini #toast-container {
+.sidebar-mini #toast-container:not(.toast-auto-save) {
   left: calc(250px + 12px);
 }
 
-.sidebar-mini.sidebar-collapse #toast-container {
+.sidebar-mini.sidebar-collapse #toast-container:not(.toast-auto-save) {
   left: calc(6rem + 12px);
 }
 
@@ -56241,6 +56241,39 @@ body.layout-fixed .main-sidebar {
   border-left: 6px solid #cf4670;
   background-image: url("../img/custom/toast_icon_fail.png") !important;
   background-position: 22px 13px !important;
+}
+
+#toast-container.toast-auto-save {
+  margin-top: calc(32px + 69px);
+}
+
+#toast-container.toast-auto-save > div {
+  width: 56px;
+  height: 50px;
+  padding: 4px 4px 0px 4px;
+  background-color: rgba(255, 255, 255, 0.65);
+  background-image: url("../img/custom/auto_save.gif") !important;
+  background-size: 42px 42px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+  align-items: end;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#toast-container.toast-auto-save > .toast > .toast-title {
+  font-size: 10px;
+}
+
+#toast-container.toast-auto-save > .toast > .toast-title:hover {
+  box-shadow: 0 2px 13px 0 rgba(146, 144, 157, 0.41);
+}
+
+#toast-container.toast-auto-save > .toast > .toast-message {
+  display: none;
 }
 
 #toast-container .toast-close-button {
@@ -56828,8 +56861,15 @@ body.layout-fixed .main-sidebar {
   height: 1.5rem;
 }
 
+.we-form-report-app .custom-control-input:disabled ~ .custom-control-label,
+.we-form-report-app .custom-control-input[disabled] ~ .custom-control-label {
+  color: #495057;
+  cursor: default;
+}
+
 .we-form-report-app .custom-control-label {
   padding-left: .35rem;
+  cursor: pointer;
 }
 
 .we-form-report-app .custom-control-label::before {

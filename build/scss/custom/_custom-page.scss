@@ -124,11 +124,11 @@
 
 /* Toaster */
 .sidebar-mini {
-  #toast-container {
+  #toast-container:not(.toast-auto-save) {
     left: calc(#{$sidebar-width} + 12px);
   }
   &.sidebar-collapse {
-    #toast-container {
+    #toast-container:not(.toast-auto-save) {
       left: calc(#{$sidebar-mini-width} + 12px);
     }
   }
@@ -169,6 +169,34 @@
     border-left: 6px solid $danger;
     background-image: url('../img/custom/toast_icon_fail.png') !important;
     background-position: 22px 13px !important;
+  }
+
+  &.toast-auto-save {
+    margin-top: $sidebar-top-offset;
+    > div {
+      width: 56px;
+      height: 50px;
+      padding: 4px 4px 0px 4px;
+      background-color: rgba(255,255,255, 0.65);
+      background-image: url('../img/custom/auto_save.gif') !important;
+      background-size: 42px 42px;
+      background-position: center top;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+    }
+    > .toast {
+      > .toast-title {
+        font-size: 10px;
+        &:hover {
+          box-shadow: 0 2px 13px 0 rgba(146, 144, 157, .41);
+        }
+      }
+      > .toast-message {
+        display: none;
+      }
+    } 
   }
 
   .toast-close-button {
