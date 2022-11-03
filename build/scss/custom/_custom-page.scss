@@ -114,7 +114,7 @@
 }
 
 .btn {
-  &[class*="btn-"]:not(.btn-icon):not(.note-btn) {
+  &[class*="btn-"]:not(.btn-icon):not(.note-btn):not(.auto) {
     min-width: 150px !important;
   }
   &.fit {
@@ -212,7 +212,7 @@
   @include button-variant($gray-600, $gray-600);
 }
 
-.swal2-container{
+.swal2-container {
   .swal2-actions {
     .swal2-confirm.btn-danger {
       @include button-variant($danger, $danger);
@@ -221,4 +221,16 @@
       @include button-variant($gray-600, $gray-600);
     }
   }
+}
+
+select.is-invalid ~ .select2-container--default .select2-selection {
+  border-color: $danger;
+  padding-right: 2.25rem!important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(1.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+.select2-container--default .select2-selection--single .select2-selection__clear {
+  font-size: 1.8rem;
 }
