@@ -56412,6 +56412,53 @@ select.is-invalid ~ .select2-container--default .select2-selection {
   font-size: 1.8rem;
 }
 
+.badge.badge-purple {
+  background-color: #707CD2;
+  color: #fff;
+  border-radius: 3rem;
+  padding: 0.2rem 0.75rem;
+  vertical-align: middle;
+}
+
+.badge.badge-purple > i {
+  font-size: 1rem;
+}
+
+.badge.badge-purple > span {
+  font-size: 70%;
+}
+
+.badge.badge-green {
+  background-color: #53E69D;
+  color: #fff;
+  border-radius: 3rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 70%;
+}
+
+.badge.badge-blue {
+  background-color: #2CABE3;
+  color: #fff;
+  border-radius: 3rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 70%;
+}
+
+.badge.badge-yellow {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFC36D;
+  color: #fff;
+  border-radius: 3rem;
+  padding: 0.2rem 0.75rem;
+}
+
+.badge.badge-yellow > i {
+  font-size: 1.5rem;
+}
+
 .btn-multiple-state {
   position: relative;
   transition: opacity 500ms;
@@ -57380,6 +57427,7 @@ select.is-invalid ~ .select2-container--default .select2-selection {
   font-weight: 400;
   color: #fff;
   padding: 10px !important;
+  vertical-align: middle;
 }
 
 .table.table-striped.we-table tbody tr.row-data:hover {
