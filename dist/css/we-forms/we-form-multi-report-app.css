@@ -35,4 +35,8 @@
 .we-form-multi-report-app .table .question-cell {
   color: #8f54c5;
 }
+
+.we-form-multi-report-app .table .input-cell {
+  min-width: 2rem;
+}
 /*# sourceMappingURL=we-form-multi-report-app.css.map */

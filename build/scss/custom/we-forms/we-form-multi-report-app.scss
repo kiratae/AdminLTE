@@ -47,5 +47,9 @@ $primary-navbar: #100a33;
         .question-cell {
             color: lighten($primary, 15%) ;
         }
+
+        .input-cell {
+            min-width: 2rem;
+        }
     }
 }
