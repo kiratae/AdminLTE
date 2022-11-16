@@ -1,0 +1,38 @@
+.we-form-multi-report-app .table.table-bordered td, .we-form-multi-report-app .table.table-bordered th {
+  border-color: #fff;
+}
+
+.we-form-multi-report-app .table.table-bordered thead td, .we-form-multi-report-app .table.table-bordered thead th {
+  border-width: 1px;
+}
+
+.we-form-multi-report-app .table thead {
+  background-color: #dee2e6;
+}
+
+.we-form-multi-report-app .table tbody, .we-form-multi-report-app .table tfoot {
+  background-color: #e9ecef;
+}
+
+.we-form-multi-report-app .table .la {
+  font-size: 1.1rem;
+}
+
+.we-form-multi-report-app .table .normal-cell {
+  color: #683498;
+}
+
+.we-form-multi-report-app .table .section-cell {
+  color: #fff;
+  background-color: #100a33;
+}
+
+.we-form-multi-report-app .table .scope-dim-cell {
+  color: #fff;
+  background-color: #683498;
+}
+
+.we-form-multi-report-app .table .question-cell {
+  color: #8f54c5;
+}
+/*# sourceMappingURL=we-form-multi-report-app.css.map */

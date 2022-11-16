@@ -1,3 +1,8 @@
+@import "~bootstrap/scss/functions";
+@import "../../bootstrap-variables";
+
+$primary: #683498;
+$primary-navbar: #100a33;
 $requireIcon: #3887C6;
 $question-lvl-bg-colors: () !default;
 $question-lvl-bg-colors: map-merge((

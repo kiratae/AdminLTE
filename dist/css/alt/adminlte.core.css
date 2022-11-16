@@ -10368,7 +10368,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-@-webkit-keyframes flipInX {
+@-webkit-keyframes flip-in-x {
   0% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
@@ -10395,7 +10395,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-@keyframes flipInX {
+@keyframes flip-in-x {
   0% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
@@ -10422,7 +10422,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-@-webkit-keyframes fadeIn {
+@-webkit-keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -10431,7 +10431,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-@keyframes fadeIn {
+@keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -10440,7 +10440,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-@-webkit-keyframes fadeOut {
+@-webkit-keyframes fade-out {
   from {
     opacity: 1;
   }
@@ -10449,7 +10449,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-@keyframes fadeOut {
+@keyframes fade-out {
   from {
     opacity: 1;
   }
@@ -10672,7 +10672,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #fff;
 }
 
-html.scroll-smooth {
+html {
   scroll-behavior: smooth;
 }
 
@@ -12272,6 +12272,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 .text-sm .main-header .nav-link, .main-header.text-sm .nav-link {
   height: 1.93725rem;
   padding: 0.35rem 1rem;
+  /* stylelint-disable selector-class-pattern */
+  /* stylelint-enable selector-class-pattern */
 }
 
 .text-sm .main-header .nav-link > .fa,
@@ -12701,6 +12703,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
   margin-right: .2rem;
   text-align: center;
   width: 1.6rem;
+  /* stylelint-disable selector-class-pattern */
+  /* stylelint-enable selector-class-pattern */
 }
 
 .nav-sidebar > .nav-item .nav-icon.fa, .nav-sidebar > .nav-item .nav-icon.fas, .nav-sidebar > .nav-item .nav-icon.far, .nav-sidebar > .nav-item .nav-icon.fab, .nav-sidebar > .nav-item .nav-icon.fal, .nav-sidebar > .nav-item .nav-icon.fad, .nav-sidebar > .nav-item .nav-icon.svg-inline--fa, .nav-sidebar > .nav-item .nav-icon.ion {
@@ -12752,8 +12756,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 }
 
 .sidebar-is-opening .sidebar .nav-sidebar .nav-link p {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
@@ -13560,8 +13564,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
   max-height: -webkit-min-content;
   max-height: -moz-min-content;
   max-height: min-content;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
@@ -13570,8 +13574,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 
 .sidebar-collapse .sidebar:not(:hover) .nav-collapse-hide-child .menu-open > .nav-treeview {
   max-height: 0;
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut;
+  -webkit-animation-name: fade-out;
+  animation-name: fade-out;
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
@@ -13589,8 +13593,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
   max-height: -webkit-min-content;
   max-height: -moz-min-content;
   max-height: min-content;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
@@ -13809,7 +13813,6 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 .layout-fixed .main-sidebar-custom {
   height: -webkit-fill-available;
   height: -moz-available;
-  height: -ms-stretch;
   height: stretch;
 }
 
@@ -14220,8 +14223,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
   .sidebar-mini.sidebar-collapse .sidebar .nav-sidebar .nav-link p,
   .sidebar-mini.sidebar-collapse .brand-text {
     margin-left: -10px;
-    -webkit-animation-name: fadeOut;
-    animation-name: fadeOut;
+    -webkit-animation-name: fade-out;
+    animation-name: fade-out;
     -webkit-animation-duration: 0.3s;
     animation-duration: 0.3s;
     -webkit-animation-fill-mode: both;
@@ -14229,8 +14232,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
     visibility: hidden;
   }
   .sidebar-mini.sidebar-collapse .logo-xl {
-    -webkit-animation-name: fadeOut;
-    animation-name: fadeOut;
+    -webkit-animation-name: fade-out;
+    animation-name: fade-out;
     -webkit-animation-duration: 0.3s;
     animation-duration: 0.3s;
     -webkit-animation-fill-mode: both;
@@ -14239,8 +14242,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
   }
   .sidebar-mini.sidebar-collapse .logo-xs {
     display: inline-block;
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+    -webkit-animation-name: fade-in;
+    animation-name: fade-in;
     -webkit-animation-duration: 0.3s;
     animation-duration: 0.3s;
     -webkit-animation-fill-mode: both;
@@ -14278,8 +14281,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
   .sidebar-mini.sidebar-collapse .main-sidebar:not(.sidebar-no-expand).sidebar-focused .logo-xl {
     display: inline-block;
     margin-left: 0;
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+    -webkit-animation-name: fade-in;
+    animation-name: fade-in;
     -webkit-animation-duration: 0.3s;
     animation-duration: 0.3s;
     -webkit-animation-fill-mode: both;
@@ -14287,8 +14290,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
     visibility: visible;
   }
   .sidebar-mini.sidebar-collapse .main-sidebar:not(.sidebar-no-expand):hover .logo-xs, .sidebar-mini.sidebar-collapse .main-sidebar:not(.sidebar-no-expand).sidebar-focused .logo-xs {
-    -webkit-animation-name: fadeOut;
-    animation-name: fadeOut;
+    -webkit-animation-name: fade-out;
+    animation-name: fade-out;
     -webkit-animation-duration: 0.3s;
     animation-duration: 0.3s;
     -webkit-animation-fill-mode: both;
@@ -14350,8 +14353,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
   .sidebar-mini-md.sidebar-collapse .sidebar .nav-sidebar .nav-link p,
   .sidebar-mini-md.sidebar-collapse .brand-text {
     margin-left: -10px;
-    -webkit-animation-name: fadeOut;
-    animation-name: fadeOut;
+    -webkit-animation-name: fade-out;
+    animation-name: fade-out;
     -webkit-animation-duration: 0.3s;
     animation-duration: 0.3s;
     -webkit-animation-fill-mode: both;
@@ -14359,8 +14362,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
     visibility: hidden;
   }
   .sidebar-mini-md.sidebar-collapse .logo-xl {
-    -webkit-animation-name: fadeOut;
-    animation-name: fadeOut;
+    -webkit-animation-name: fade-out;
+    animation-name: fade-out;
     -webkit-animation-duration: 0.3s;
     animation-duration: 0.3s;
     -webkit-animation-fill-mode: both;
@@ -14369,8 +14372,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
   }
   .sidebar-mini-md.sidebar-collapse .logo-xs {
     display: inline-block;
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+    -webkit-animation-name: fade-in;
+    animation-name: fade-in;
     -webkit-animation-duration: 0.3s;
     animation-duration: 0.3s;
     -webkit-animation-fill-mode: both;
@@ -14408,8 +14411,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
   .sidebar-mini-md.sidebar-collapse .main-sidebar:not(.sidebar-no-expand).sidebar-focused .logo-xl {
     display: inline-block;
     margin-left: 0;
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+    -webkit-animation-name: fade-in;
+    animation-name: fade-in;
     -webkit-animation-duration: 0.3s;
     animation-duration: 0.3s;
     -webkit-animation-fill-mode: both;
@@ -14417,8 +14420,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
     visibility: visible;
   }
   .sidebar-mini-md.sidebar-collapse .main-sidebar:not(.sidebar-no-expand):hover .logo-xs, .sidebar-mini-md.sidebar-collapse .main-sidebar:not(.sidebar-no-expand).sidebar-focused .logo-xs {
-    -webkit-animation-name: fadeOut;
-    animation-name: fadeOut;
+    -webkit-animation-name: fade-out;
+    animation-name: fade-out;
     -webkit-animation-duration: 0.3s;
     animation-duration: 0.3s;
     -webkit-animation-fill-mode: both;
@@ -14484,8 +14487,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 .sidebar-mini-xs.sidebar-collapse .sidebar .nav-sidebar .nav-link p,
 .sidebar-mini-xs.sidebar-collapse .brand-text {
   margin-left: -10px;
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut;
+  -webkit-animation-name: fade-out;
+  animation-name: fade-out;
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
@@ -14494,8 +14497,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 }
 
 .sidebar-mini-xs.sidebar-collapse .logo-xl {
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut;
+  -webkit-animation-name: fade-out;
+  animation-name: fade-out;
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
@@ -14505,8 +14508,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 
 .sidebar-mini-xs.sidebar-collapse .logo-xs {
   display: inline-block;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
@@ -14552,8 +14555,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 .sidebar-mini-xs.sidebar-collapse .main-sidebar:not(.sidebar-no-expand).sidebar-focused .logo-xl {
   display: inline-block;
   margin-left: 0;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
@@ -14562,8 +14565,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 }
 
 .sidebar-mini-xs.sidebar-collapse .main-sidebar:not(.sidebar-no-expand):hover .logo-xs, .sidebar-mini-xs.sidebar-collapse .main-sidebar:not(.sidebar-no-expand).sidebar-focused .logo-xs {
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut;
+  -webkit-animation-name: fade-out;
+  animation-name: fade-out;
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
@@ -14936,8 +14939,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 .sidebar-collapse.sidebar-mini .sidebar-no-expand.main-sidebar:hover .logo-xs, .sidebar-collapse.sidebar-mini-md .sidebar-no-expand.main-sidebar.sidebar-focused .logo-xs,
 .sidebar-collapse.sidebar-mini-md .sidebar-no-expand.main-sidebar:hover .logo-xs, .sidebar-collapse.sidebar-mini-xs .sidebar-no-expand.main-sidebar.sidebar-focused .logo-xs,
 .sidebar-collapse.sidebar-mini-xs .sidebar-no-expand.main-sidebar:hover .logo-xs {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
@@ -14949,8 +14952,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 .sidebar-collapse.sidebar-mini .sidebar-no-expand.main-sidebar:hover .logo-xl, .sidebar-collapse.sidebar-mini-md .sidebar-no-expand.main-sidebar.sidebar-focused .logo-xl,
 .sidebar-collapse.sidebar-mini-md .sidebar-no-expand.main-sidebar:hover .logo-xl, .sidebar-collapse.sidebar-mini-xs .sidebar-no-expand.main-sidebar.sidebar-focused .logo-xl,
 .sidebar-collapse.sidebar-mini-xs .sidebar-no-expand.main-sidebar:hover .logo-xl {
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut;
+  -webkit-animation-name: fade-out;
+  animation-name: fade-out;
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
@@ -14982,8 +14985,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 .sidebar-collapse.sidebar-mini-xs .sidebar-no-expand.main-sidebar:hover .sidebar .user-panel > .info,
 .sidebar-collapse.sidebar-mini-xs .sidebar-no-expand.main-sidebar:hover .sidebar .nav-sidebar .nav-link p {
   margin-left: -10px;
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut;
+  -webkit-animation-name: fade-out;
+  animation-name: fade-out;
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
@@ -15292,8 +15295,8 @@ body.text-sm .control-sidebar {
 }
 
 .open:not(.dropup) > .animated-dropdown-menu {
-  -webkit-animation: flipInX 0.7s both;
-  animation: flipInX 0.7s both;
+  -webkit-animation: flip-in-x 0.7s both;
+  animation: flip-in-x 0.7s both;
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
 }
@@ -21585,6 +21588,8 @@ body.text-sm .control-sidebar {
   -ms-flex-pack: center;
   justify-content: center;
   z-index: 50;
+  /* stylelint-disable selector-class-pattern */
+  /* stylelint-enable selector-class-pattern */
 }
 
 .card .overlay > .fa,
@@ -21627,6 +21632,8 @@ body.text-sm .control-sidebar {
 .info-box .overlay.dark,
 .small-box .overlay.dark {
   background-color: rgba(0, 0, 0, 0.5);
+  /* stylelint-disable selector-class-pattern */
+  /* stylelint-enable selector-class-pattern */
 }
 
 .card .overlay.dark > .fa,
