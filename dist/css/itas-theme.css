@@ -56413,7 +56413,7 @@ select.is-invalid ~ .select2-container--default .select2-selection {
 }
 
 .badge.badge-purple {
-  background-color: #707CD2;
+  background-color: #707cd2;
   color: #fff;
   border-radius: 3rem;
   padding: 0.2rem 0.75rem;
@@ -56429,7 +56429,7 @@ select.is-invalid ~ .select2-container--default .select2-selection {
 }
 
 .badge.badge-green {
-  background-color: #53E69D;
+  background-color: #53e69d;
   color: #fff;
   border-radius: 3rem;
   padding: 0.5rem 0.75rem;
@@ -56437,7 +56437,7 @@ select.is-invalid ~ .select2-container--default .select2-selection {
 }
 
 .badge.badge-blue {
-  background-color: #2CABE3;
+  background-color: #2cabe3;
   color: #fff;
   border-radius: 3rem;
   padding: 0.5rem 0.75rem;
@@ -56449,7 +56449,7 @@ select.is-invalid ~ .select2-container--default .select2-selection {
   display: inline-flex;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFC36D;
+  background-color: #ffc36d;
   color: #fff;
   border-radius: 3rem;
   padding: 0.2rem 0.75rem;

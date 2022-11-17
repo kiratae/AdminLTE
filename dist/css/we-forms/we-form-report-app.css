@@ -66,11 +66,11 @@
   padding: 0.75rem 1.25rem;
 }
 
-.we-form-report-app .custom-control.custom-radio {
+.we-form-report-app .custom-control.custom-radio, .we-form-report-app .custom-control.custom-checkbox {
   margin-right: 1rem;
 }
 
-.we-form-report-app .custom-control.custom-radio:last-child {
+.we-form-report-app .custom-control.custom-radio:last-child, .we-form-report-app .custom-control.custom-checkbox:last-child {
   margin-right: 0;
 }
 

@@ -237,8 +237,8 @@ select.is-invalid ~ .select2-container--default .select2-selection {
 
 .badge {
   &.badge-purple {
-    background-color: #707CD2;
-    color: #fff;
+    background-color: $purlple-bage-color;
+    color: $white;
     border-radius: 3rem;
     padding: 0.2rem 0.75rem;
     vertical-align: middle;
@@ -250,15 +250,15 @@ select.is-invalid ~ .select2-container--default .select2-selection {
     }
   }
   &.badge-green {
-    background-color: #53E69D;
-    color: #fff;
+    background-color: $green-bage-color;
+    color: $white;
     border-radius: 3rem;
     padding: 0.5rem 0.75rem;
     font-size: 70%;
   }
   &.badge-blue {
-    background-color: #2CABE3;
-    color: #fff;
+    background-color: $blue-bage-color;
+    color: $white;
     border-radius: 3rem;
     padding: 0.5rem 0.75rem;
     font-size: 70%;
@@ -266,8 +266,8 @@ select.is-invalid ~ .select2-container--default .select2-selection {
   &.badge-yellow {
     display: inline-flex;
     align-items: center;
-    background-color: #FFC36D;
-    color: #fff;
+    background-color: $yellow-bage-color;
+    color: $white;
     border-radius: 3rem;
     padding: 0.2rem 0.75rem;
     > i {

@@ -111,17 +111,17 @@ $question-lvl-border-colors: map-merge((
     [class*="question-lvl-"] {
       transition: background-color, opacity 150ms ease;
       &.deleting {
-        background-color: lighten($danger, 25%);
+        background-color: lighten($danger, 25%) !important;
         opacity: .6;
         > .question-cell {
-          background-color: lighten($danger, 25%);
-          color: $gray-700;
+          background-color: lighten($danger, 25%) !important;
+          color: $gray-700 !important;
           &.tool {
             display: none;
           }
         }
       }
-      &.leaf-node {
+      &.leaf-node:not(.deleting) {
         > .question-cell {
           color: $black !important;
           background-color: $white !important;

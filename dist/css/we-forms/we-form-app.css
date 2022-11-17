@@ -81,25 +81,25 @@
 }
 
 .we-form-app .we-form-app-table [class*="question-lvl-"].deleting {
-  background-color: #efa2a9;
+  background-color: #efa2a9 !important;
   opacity: .6;
 }
 
 .we-form-app .we-form-app-table [class*="question-lvl-"].deleting > .question-cell {
-  background-color: #efa2a9;
-  color: #495057;
+  background-color: #efa2a9 !important;
+  color: #495057 !important;
 }
 
 .we-form-app .we-form-app-table [class*="question-lvl-"].deleting > .question-cell.tool {
   display: none;
 }
 
-.we-form-app .we-form-app-table [class*="question-lvl-"].leaf-node > .question-cell {
+.we-form-app .we-form-app-table [class*="question-lvl-"].leaf-node:not(.deleting) > .question-cell {
   color: #000 !important;
   background-color: #fff !important;
 }
 
-.we-form-app .we-form-app-table [class*="question-lvl-"].leaf-node > .question-cell .modify-tool > .btn {
+.we-form-app .we-form-app-table [class*="question-lvl-"].leaf-node:not(.deleting) > .question-cell .modify-tool > .btn {
   color: #000 !important;
 }
 
