@@ -1,18 +1,19 @@
 // Your variable overrides
-$primary: #683498;
-$primary-light: #9570b6;
-$primary-dark: #48246a;
-$primary-darken: #341a4c;
-$primary-navbar: #100a33;
+$primary: #32437D;
+$primary-light: #586591;
+$primary-dark: #33437E;
+$primary-darken: #1E284B;
+$primary-navbar: #151855;
 $primary2: #264391;
-$secondary: #272e39;
-$danger: #cf4670;
+$secondary: #9eb1e2;
+$danger: #d05f74;
 $success: #26b465;
-$primary-btn-indicator: #6e1977 !default;
+$primary-btn-indicator: $primary !default;
 
 $main-bg: #edf1f5;
 
-$header-bg: linear-gradient(105.76deg, #100a33 22.44%, #213089 62.67%, #362348 95.62%);
+// $header-bg: linear-gradient(105.76deg, #100a33 22.44%, #213089 62.67%, #362348 95.62%);
+$header-bg: linear-gradient(104.73deg, #1F3275 0.95%, #151852 17.64%, #212589 55.41%, #262348 100%);
 
 // bage
 $purlple-bage-color: #707cd2;

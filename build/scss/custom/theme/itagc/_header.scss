@@ -1,0 +1,32 @@
+.layout-navbar-fixed .wrapper {
+  .main-header {
+    left: 0 !important;
+    position: fixed !important;
+    right: 0 !important;
+    top: 32px !important;
+    border-bottom: unset !important;
+    background: $header-bg !important;
+    max-height: $navbar-main-height !important;
+    .navbar-nav .nav-item {
+      color: $white !important;
+    }
+  }
+  .top-header {
+    left: 0 !important;
+    position: fixed !important;
+    right: 0 !important;
+    top: 0 !important;
+    padding: 0 !important;
+    max-height: $navbar-top-height !important;
+  }
+}
+.navbar-light .navbar-nav .nav-link {
+  color: $white !important;
+}
+.layout-navbar-fixed .wrapper .content-wrapper {
+  margin-top: calc(32px + 66px) !important;
+}
+.user-dropmenu {
+  user-select: none;
+  color: $black !important;
+}

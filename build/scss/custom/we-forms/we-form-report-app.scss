@@ -1,11 +1,17 @@
 @import "~bootstrap/scss/functions";
 @import "../../bootstrap-variables";
+@import "~bootstrap/scss/mixins/gradients";
 
 $form-report-app-primary: #264391;
 $form-report-app-success: #16b09e;
 $form-report-app-cancel: #cb5050;
 $form-report-app-question: linear-gradient(180deg, #eeedf7 0%, #ece9ff 100%);
 $form-report-app-sub-question: #f2f6f7;
+$form-report-control-indicator-checked-color: #6376a7;
+
+$custom-control-indicator-checked-color: $form-report-control-indicator-checked-color;
+$custom-checkbox-indicator-icon-checked: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='#{$form-report-control-indicator-checked-color}' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"), "#", "%23");
+$custom-radio-indicator-icon-checked: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='4' fill='#{$form-report-control-indicator-checked-color}'/%3E%3C/svg%3E"), "#", "%23");
 
 .we-form-report-app {
   .question-card {
@@ -71,7 +77,8 @@ $form-report-app-sub-question: #f2f6f7;
     }
   }
 
-  .custom-control.custom-radio, .custom-control.custom-checkbox {
+  .custom-control.custom-radio,
+  .custom-control.custom-checkbox {
     margin-right: 1rem;
     &:last-child {
       margin-right: 0;
@@ -424,5 +431,35 @@ $form-report-app-sub-question: #f2f6f7;
   }
   .bg-primary {
     background-color: $form-report-app-primary !important;
+  }
+
+  .custom-control-input-primary2 {
+    &:checked ~ .custom-control-label::before {
+      border-color: $form-report-control-indicator-checked-color;
+      @include gradient-bg($form-report-control-indicator-checked-color);
+    }
+
+    &.custom-control-input-outline:checked {
+      &[type="checkbox"] ~ .custom-control-label::after {
+        background-image: $custom-checkbox-indicator-icon-checked !important;
+      }
+      &[type="radio"] ~ .custom-control-label::after {
+        background-image: $custom-radio-indicator-icon-checked !important;
+      }
+    }
+
+    &:focus ~ .custom-control-label::before {
+      box-shadow: 0 0 0 $input-btn-focus-width
+        rgba($form-report-control-indicator-checked-color, 0.25);
+    }
+
+    &:focus:not(:checked) ~ .custom-control-label::before {
+      border-color: lighten($form-report-control-indicator-checked-color, 25%);
+    }
+
+    &:not(:disabled):active ~ .custom-control-label::before {
+      background-color: lighten($form-report-control-indicator-checked-color, 35%);
+      border-color: lighten($form-report-control-indicator-checked-color, 35%);
+    }
   }
 }

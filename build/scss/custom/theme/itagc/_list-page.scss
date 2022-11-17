@@ -1,0 +1,51 @@
+.table.table-striped.we-table {
+  thead {
+    background-color: $primary-navbar;
+    tr th {
+      font-weight: $font-weight-bold;
+      color: $white;
+      padding: 10px !important;
+      vertical-align: middle;
+    }
+  }
+  tbody tr.row-data:hover {
+    background-color: opacify(lighten($primary, 40%), .45);
+  }
+  tbody tr td {
+    font-weight: $font-weight-normal;
+    border: none !important;
+    a {
+      color: $black;
+      text-decoration: none;
+    }
+    &:not(.tool) a:hover {
+      text-decoration: underline;
+    }
+    &.tool .btn-icon:not(:first-child) {
+      border-left: 2px solid rgba(0, 0, 0, .08);
+    }
+  }
+  [class*="icheck-"] > input:first-child + label::before {
+    background-color: $white;
+  }
+  .icheck-primary > input:first-child:checked + label::before {
+    background-color: $primary;
+  }
+}
+
+.btn.btn-under-line {
+  min-width: 90px;
+  border-radius: 0 !important;
+  border: none !important;
+  &.active {
+    border-bottom: 2px solid $primary-btn-indicator !important;
+  }
+}
+
+.we-search-form {
+  .btn-clear {
+    border-color: $gray-400 !important;
+    background-color: $gray-200 !important;
+    color: $gray-700 !important;
+  }
+}
