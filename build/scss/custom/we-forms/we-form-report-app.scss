@@ -3,11 +3,16 @@
 @import "~bootstrap/scss/mixins/gradients";
 
 $form-report-app-primary: #264391;
+$form-report-app-primary-disabled: #0d4d8b;
 $form-report-app-success: #16b09e;
+$form-report-app-success-disabled: #75a4a6;
 $form-report-app-cancel: #cb5050;
+$form-report-app-cancel-disabled: #ab6a50;
 $form-report-app-question: linear-gradient(180deg, #eeedf7 0%, #ece9ff 100%);
 $form-report-app-sub-question: #f2f6f7;
 $form-report-control-indicator-checked-color: #6376a7;
+$form-report-status-draft: #707cd2;
+$form-report-status-waiting: #ffc36d;
 
 $custom-control-indicator-checked-color: $form-report-control-indicator-checked-color;
 $custom-checkbox-indicator-icon-checked: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='#{$form-report-control-indicator-checked-color}' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"), "#", "%23");
@@ -212,20 +217,20 @@ $custom-radio-indicator-icon-checked: str-replace(url("data:image/svg+xml;charse
     border: 1px solid $form-report-app-primary;
     transition: background-color 0.8s;
     &:hover {
-      color: #fff;
+      color: $white;
       background-color: darken($form-report-app-primary, 10%);
       border-color: darken($form-report-app-primary, 10%);
     }
     &:active {
-      color: #fff;
+      color: $white;
       background-color: darken($form-report-app-primary, 15%);
       border-color: darken($form-report-app-primary, 15%);
     }
     &:disabled,
     &.disabled {
-      color: #fff;
-      background-color: #0d4d8b;
-      border-color: #0d4d8b;
+      color: $white;
+      background-color: $form-report-app-primary-disabled;
+      border-color: $form-report-app-primary-disabled;
     }
   }
 
@@ -237,20 +242,20 @@ $custom-radio-indicator-icon-checked: str-replace(url("data:image/svg+xml;charse
     border: 1px solid $form-report-app-success;
     transition: background-color 0.8s;
     &:hover {
-      color: #fff;
+      color: $white;
       background-color: darken($form-report-app-success, 10%);
       border-color: darken($form-report-app-success, 10%);
     }
     &:active {
-      color: #fff;
+      color: $white;
       background-color: darken($form-report-app-success, 15%);
       border-color: darken($form-report-app-success, 15%);
     }
     &:disabled,
     &.disabled {
-      color: #fff;
-      background-color: #75a4a6;
-      border-color: #75a4a6;
+      color: $white;
+      background-color: $form-report-app-success-disabled;
+      border-color: $form-report-app-success-disabled;
     }
   }
 
@@ -262,20 +267,20 @@ $custom-radio-indicator-icon-checked: str-replace(url("data:image/svg+xml;charse
     border: 1px solid $form-report-app-cancel;
     transition: background-color 0.8s;
     &:hover {
-      color: #fff;
+      color: $white;
       background-color: darken($form-report-app-cancel, 10%);
       border-color: darken($form-report-app-cancel, 10%);
     }
     &:active {
-      color: #fff;
+      color: $white;
       background-color: darken($form-report-app-cancel, 15%);
       border-color: darken($form-report-app-cancel, 15%);
     }
     &:disabled,
     &.disabled {
-      color: #fff;
-      background-color: #ab6a50;
-      border-color: #ab6a50;
+      color: $white;
+      background-color: $form-report-app-cancel-disabled;
+      border-color: $form-report-app-cancel-disabled;
     }
   }
 
@@ -286,20 +291,46 @@ $custom-radio-indicator-icon-checked: str-replace(url("data:image/svg+xml;charse
     border: 1px solid $form-report-app-primary !important;
     min-width: unset !important;
     &:hover {
-      color: #fff;
+      color: $white;
       background-color: darken($form-report-app-primary, 10%) !important;
       border-color: darken($form-report-app-primary, 10%) !important;
     }
     &:active {
-      color: #fff !important;
+      color: $white !important;
       background-color: darken($form-report-app-primary, 15%) !important;
       border-color: darken($form-report-app-primary, 15%) !important;
     }
     &:disabled,
     &.disabled {
-      color: #fff !important;
-      background-color: #264391 !important;
-      border-color: #264391 !important;
+      color: $white !important;
+      background-color: $form-report-app-primary-disabled !important;
+      border-color: $form-report-app-primary-disabled !important;
+    }
+  }
+
+  .btn-back {
+    height: 42px;
+    color: $white;
+    border-radius: 56px;
+    background-color: $gray-600;
+    border: 1px solid $gray-600;
+    transition: background-color 0.8s;
+    line-height: 1.8;
+    &:hover {
+      color: $white;
+      background-color: darken($gray-600, 10%);
+      border-color: darken($gray-600, 10%);
+    }
+    &:active {
+      color: $white;
+      background-color: darken($gray-600, 15%);
+      border-color: darken($gray-600, 15%);
+    }
+    &:disabled,
+    &.disabled {
+      color: $white;
+      background-color: $gray-800;
+      border-color: $gray-800;
     }
   }
 
