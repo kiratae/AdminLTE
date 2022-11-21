@@ -66,6 +66,13 @@
   padding: 0.75rem 1.25rem;
 }
 
+.we-form-report-app .answer-domain-section .custom-control.custom-radio,
+.we-form-report-app .answer-domain-section .custom-control.custom-checkbox {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin: .45rem;
+}
+
 .we-form-report-app .custom-control.custom-radio,
 .we-form-report-app .custom-control.custom-checkbox {
   margin-right: 1rem;
