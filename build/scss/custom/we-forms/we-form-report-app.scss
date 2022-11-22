@@ -82,6 +82,14 @@ $custom-radio-indicator-icon-checked: str-replace(url("data:image/svg+xml;charse
     }
   }
 
+  .answer-domain-section {
+    .custom-control.custom-radio,
+    .custom-control.custom-checkbox {
+      flex: 1 1 auto;
+      margin: .45rem;
+    }
+  }
+
   .custom-control.custom-radio,
   .custom-control.custom-checkbox {
     margin-right: 1rem;
