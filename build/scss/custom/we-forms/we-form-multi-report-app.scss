@@ -1,10 +1,6 @@
 @import "~bootstrap/scss/functions";
 @import "../../bootstrap-variables";
-
-// $primary: #683498; // itas
-// $primary-navbar: #100a33; // itas
-$primary: #32437D; // itagc
-$primary-navbar: #151855; // itagc
+@import "./variable";
 
 .we-form-multi-report-app {
     .table {
