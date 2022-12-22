@@ -70,7 +70,7 @@
 .we-form-report-app .answer-domain-section .custom-control.custom-checkbox {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  margin: .45rem;
+  margin: 0.45rem;
 }
 
 .we-form-report-app .custom-control.custom-radio,
@@ -541,5 +541,20 @@
 .we-form-report-app .custom-control-input-primary2:not(:disabled):active ~ .custom-control-label::before {
   background-color: #d5dae7;
   border-color: #d5dae7;
+}
+
+.we-form-report-app .badge-error {
+  position: absolute;
+  top: 0;
+  right: -.6rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 /*# sourceMappingURL=we-form-report-app.css.map */
