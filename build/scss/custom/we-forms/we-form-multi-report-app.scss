@@ -3,51 +3,54 @@
 @import "./variable";
 
 .we-form-multi-report-app {
-    .table {
-        &.table-bordered {
-            td, th {
-                border-color: $white;
-            }
+  .table {
+    &.table-bordered {
+      td,
+      th {
+        border-color: $white;
+      }
 
-            thead {
-                td, th {
-                    border-width: 1px;
-                }
-            }
+      thead {
+        td,
+        th {
+          border-width: 1px;
         }
-
-        thead {
-            background-color: $gray-300;
-        }
-
-        tbody, tfoot {
-            background-color: $gray-200;
-        }
-
-        .la {
-            font-size: 1.1rem;
-        }
-
-        .normal-cell {
-            color: $primary;
-        }
-
-        .section-cell {
-            color: $white;
-            background-color: $primary-navbar;
-        }
-
-        .scope-dim-cell {
-            color: $white;
-            background-color: $primary;
-        }
-
-        .question-cell {
-            color: lighten($primary, 15%) ;
-        }
-
-        .input-cell {
-            min-width: 2rem;
-        }
+      }
     }
+
+    thead {
+      background-color: $gray-300;
+    }
+
+    tbody,
+    tfoot {
+      background-color: $gray-200;
+    }
+
+    .la {
+      font-size: 1.1rem;
+    }
+
+    .normal-cell {
+      color: $primary;
+    }
+
+    .section-cell {
+      color: $white;
+      background-color: $primary-navbar;
+    }
+
+    .scope-dim-cell {
+      color: $white;
+      background-color: $primary;
+    }
+
+    .question-cell {
+      color: lighten($primary, 15%);
+    }
+
+    .input-cell {
+      min-width: 2rem;
+    }
+  }
 }

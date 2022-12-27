@@ -45,7 +45,7 @@
             background: transparent !important;
             .dropdown-item {
               padding: 0 !important;
-              background-color: $sidebar-light-submenu-bg !important;
+              background-color: $sidebar-light-submenu-custom-bg !important;
               .nav-link {
                 p {
                   margin-left: 0 !important;
@@ -141,7 +141,7 @@ body.layout-fixed{
   }
 }
 .main-sidebar {
-  z-index: 1037 !important;
+  z-index: 1038 !important;
   // min-height: 100vh !important;
   // height: calc(100% + #{$sidebar-top-offset}) !important;
   // .sidebar {

@@ -1,8 +1,8 @@
 // Your variable overrides
-$primary: #32437D;
+$primary: #32437d;
 $primary-light: #586591;
-$primary-dark: #33437E;
-$primary-darken: #1E284B;
+$primary-dark: #33437e;
+$primary-darken: #1e284b;
 $primary-navbar: #151855;
 $primary2: #264391;
 $secondary: #9eb1e2;
@@ -13,7 +13,7 @@ $primary-btn-indicator: $primary !default;
 $main-bg: #edf1f5;
 
 // $header-bg: linear-gradient(105.76deg, #100a33 22.44%, #213089 62.67%, #362348 95.62%);
-$header-bg: linear-gradient(104.73deg, #1F3275 0.95%, #151852 17.64%, #212589 55.41%, #262348 100%);
+$header-bg: linear-gradient(104.73deg, #1f3275 .95%, #151852 17.64%, #212589 55.41%, #262348 100%);
 
 // bage
 $purlple-bage-color: #707cd2;
@@ -48,7 +48,8 @@ $sidebar-light-hover-bg: $primary-light;
 $sidebar-light-active-color: $white;
 $sidebar-light-active-bg: $primary-darken !default;
 $sidebar-light-active-indicator: $white !default;
-$sidebar-light-submenu-bg: $primary;
+$sidebar-light-submenu-bg: darken($primary-navbar, 5%);
+$sidebar-light-submenu-custom-bg: $primary;
 $sidebar-light-submenu-color: $white;
 $sidebar-light-submenu-hover-color: $sidebar-light-hover-color;
 $sidebar-light-submenu-hover-bg: $sidebar-light-hover-bg;

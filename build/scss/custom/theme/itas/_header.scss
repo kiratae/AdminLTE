@@ -18,6 +18,7 @@
     top: 0 !important;
     padding: 0 !important;
     max-height: $navbar-top-height !important;
+    min-height: $navbar-top-height !important;
   }
 }
 .navbar-light .navbar-nav .nav-link {
