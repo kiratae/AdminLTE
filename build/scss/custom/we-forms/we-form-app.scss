@@ -38,7 +38,7 @@ $question-lvl-border-colors: map-merge(
   ,"5": lighten($primary, 36%)
   ,"6": lighten($primary, 42%)
   ,"7": lighten($primary, 46%)
-  "8": lighten($primary, 50%)),
+  ,"8": lighten($primary, 50%)),
   $question-lvl-border-colors
 );
 

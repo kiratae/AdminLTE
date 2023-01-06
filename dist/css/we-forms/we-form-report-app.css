@@ -63,14 +63,14 @@
 }
 
 .we-form-report-app .question-card .question-body.leaf-node {
-  padding: 0.75rem 1.25rem;
+  padding: .75rem 1.25rem;
 }
 
 .we-form-report-app .answer-domain-section .custom-control.custom-radio,
 .we-form-report-app .answer-domain-section .custom-control.custom-checkbox {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  margin: 0.45rem;
+  margin: .45rem;
 }
 
 .we-form-report-app .custom-control.custom-radio,
@@ -95,12 +95,12 @@
 }
 
 .we-form-report-app .custom-control-label {
-  padding-left: 0.35rem;
+  padding-left: .35rem;
   cursor: pointer;
 }
 
 .we-form-report-app .custom-control-label::before {
-  top: 0.125rem;
+  top: .125rem;
   left: -1.5rem;
   width: 1.25rem;
   height: 1.25rem;
@@ -132,7 +132,12 @@
 }
 
 .we-form-report-app .slider-nav-btn:disabled {
-  opacity: 0.4;
+  opacity: .4;
+}
+
+.we-form-report-app .we-slide {
+  /* stylelint-disable-next-line selector-class-pattern */
+  /* stylelint-disable-next-line selector-class-pattern */
 }
 
 .we-form-report-app .we-slide .splide__arrow--prev {
@@ -222,7 +227,7 @@
   border-radius: 56px;
   background-color: #264391;
   border: 1px solid #264391;
-  transition: background-color 0.8s;
+  transition: background-color .8s;
 }
 
 .we-form-report-app .btn-draft:hover {
@@ -249,7 +254,7 @@
   border-radius: 56px;
   background-color: #16b09e;
   border: 1px solid #16b09e;
-  transition: background-color 0.8s;
+  transition: background-color .8s;
 }
 
 .we-form-report-app .btn-submit:hover {
@@ -276,7 +281,7 @@
   border-radius: 56px;
   background-color: #cb5050;
   border: 1px solid #cb5050;
-  transition: background-color 0.8s;
+  transition: background-color .8s;
 }
 
 .we-form-report-app .btn-cancel:hover {
@@ -299,7 +304,7 @@
 
 .we-form-report-app .btn-primary {
   color: #fff;
-  padding: 0.25rem 0.75rem;
+  padding: .25rem .75rem;
   background-color: #264391 !important;
   border: 1px solid #264391 !important;
   min-width: unset !important;
@@ -329,7 +334,7 @@
   border-radius: 56px;
   background-color: #6c757d;
   border: 1px solid #6c757d;
-  transition: background-color 0.8s;
+  transition: background-color .8s;
   line-height: 1.8;
 }
 
@@ -382,10 +387,6 @@
   color: #53b2e5;
 }
 
-.we-form-report-app .status-scoring {
-  color: #df9320;
-}
-
 .we-form-report-app .skeleton {
   -webkit-animation: skeleton-loading 1s linear infinite alternate;
   animation: skeleton-loading 1s linear infinite alternate;
@@ -417,6 +418,8 @@
   overflow: hidden;
   -ms-flex-pack: start;
   justify-content: start;
+  /* stylelint-disable-next-line selector-class-pattern */
+  /* stylelint-disable-next-line selector-class-pattern */
 }
 
 .we-form-report-app .we-slide-sk .splide__arrow--prev {
@@ -464,15 +467,15 @@
 .we-form-report-app .we-slide-sk .we-slide-nav > .we-slide-item > .name {
   width: 100%;
   margin: 0 8px;
-  border-radius: 0.25rem;
+  border-radius: .25rem;
   height: 1rem;
 }
 
 .we-form-report-app .skeleton-text {
   width: 100%;
   height: 1rem;
-  margin-bottom: 0.5rem;
-  border-radius: 0.25rem;
+  margin-bottom: .5rem;
+  border-radius: .25rem;
 }
 
 .we-form-report-app .skeleton-radio-container {
@@ -480,7 +483,7 @@
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
 }
 
 .we-form-report-app .skeleton-radio-container .radio {
@@ -494,14 +497,14 @@
 .we-form-report-app .skeleton-radio-container .skeleton-radio {
   width: 100%;
   height: 1rem;
-  border-radius: 0.25rem;
-  margin-left: 0.5rem;
+  border-radius: .25rem;
+  margin-left: .5rem;
 }
 
 .we-form-report-app .skeleton-card-title {
   width: 100%;
   height: 1.1rem;
-  border-radius: 0.25rem;
+  border-radius: .25rem;
 }
 
 .we-form-report-app .progress:not(.we-uploadfile-progress) {
@@ -510,7 +513,7 @@
 }
 
 .we-form-report-app .progress:not(.we-uploadfile-progress) > .progress-bar {
-  transition: width 0.5s;
+  transition: width .5s;
 }
 
 .we-form-report-app .bg-primary {
