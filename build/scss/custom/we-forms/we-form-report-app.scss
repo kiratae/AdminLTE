@@ -13,6 +13,7 @@ $form-report-app-sub-question: #f2f6f7;
 $form-report-control-indicator-checked-color: #6376a7;
 $form-report-status-draft: #707cd2;
 $form-report-status-waiting: #ffc36d;
+$form-report-answer-his: #35799D;
 
 $custom-control-indicator-checked-color: $form-report-control-indicator-checked-color;
 $custom-checkbox-indicator-icon-checked: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='#{$form-report-control-indicator-checked-color}' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"), "#", "%23");
@@ -87,6 +88,13 @@ $custom-radio-indicator-icon-checked: str-replace(url("data:image/svg+xml;charse
       }
       &.leaf-node {
         padding: .75rem 1.25rem;
+      }
+
+      .text-answer-his {
+        color: $form-report-answer-his !important;
+      }
+      .badge-after-input {
+        font-size: 100% !important;
       }
     }
   }
