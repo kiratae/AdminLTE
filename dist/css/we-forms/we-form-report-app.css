@@ -262,8 +262,8 @@
 
 .we-form-report-app .btn-draft:disabled, .we-form-report-app .btn-draft.disabled {
   color: #fff;
-  background-color: #0d4d8b;
-  border-color: #0d4d8b;
+  background-color: #677bb2;
+  border-color: #677bb2;
 }
 
 .we-form-report-app .btn-submit {
@@ -316,8 +316,8 @@
 
 .we-form-report-app .btn-cancel:disabled, .we-form-report-app .btn-cancel.disabled {
   color: #fff;
-  background-color: #ab6a50;
-  border-color: #ab6a50;
+  background-color: #677bb2;
+  border-color: #677bb2;
 }
 
 .we-form-report-app .btn-primary {
@@ -342,8 +342,8 @@
 
 .we-form-report-app .btn-primary:disabled, .we-form-report-app .btn-primary.disabled {
   color: #fff !important;
-  background-color: #0d4d8b !important;
-  border-color: #0d4d8b !important;
+  background-color: #677bb2 !important;
+  border-color: #677bb2 !important;
 }
 
 .we-form-report-app .btn-back {
