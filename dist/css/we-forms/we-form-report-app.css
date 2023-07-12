@@ -316,8 +316,35 @@
 
 .we-form-report-app .btn-cancel:disabled, .we-form-report-app .btn-cancel.disabled {
   color: #fff;
-  background-color: #677bb2;
-  border-color: #677bb2;
+  background-color: #da8484;
+  border-color: #da8484;
+}
+
+.we-form-report-app .btn-cancel2 {
+  height: 42px;
+  color: #fff;
+  border-radius: 56px;
+  background-color: #cb8e50;
+  border: 1px solid #cb8e50;
+  transition: background-color .8s;
+}
+
+.we-form-report-app .btn-cancel2:hover {
+  color: #fff;
+  background-color: #b37535;
+  border-color: #b37535;
+}
+
+.we-form-report-app .btn-cancel2:active {
+  color: #fff;
+  background-color: #9f682f;
+  border-color: #9f682f;
+}
+
+.we-form-report-app .btn-cancel2:disabled, .we-form-report-app .btn-cancel2.disabled {
+  color: #fff;
+  background-color: #daaf84;
+  border-color: #daaf84;
 }
 
 .we-form-report-app .btn-primary {

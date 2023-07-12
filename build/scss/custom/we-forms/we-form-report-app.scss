@@ -7,7 +7,9 @@ $form-report-app-primary-disabled: #677bb2;
 $form-report-app-success: #16b09e;
 $form-report-app-success-disabled: #75a4a6;
 $form-report-app-cancel: #cb5050;
-$form-report-app-cancel-disabled: #677bb2;
+$form-report-app-cancel-disabled: #da8484;
+$form-report-app-cancel2: #cb8e50;
+$form-report-app-cancel2-disabled: #daaf84;
 $form-report-app-question: linear-gradient(180deg, #eeedf7 0%, #ece9ff 100%);
 $form-report-app-sub-question: #f2f6f7;
 $form-report-control-indicator-checked-color: #6376a7;
@@ -308,6 +310,31 @@ $custom-radio-indicator-icon-checked: str-replace(url("data:image/svg+xml;charse
       color: $white;
       background-color: $form-report-app-cancel-disabled;
       border-color: $form-report-app-cancel-disabled;
+    }
+  }
+
+  .btn-cancel2 {
+    height: 42px;
+    color: $white;
+    border-radius: 56px;
+    background-color: $form-report-app-cancel2;
+    border: 1px solid $form-report-app-cancel2;
+    transition: background-color .8s;
+    &:hover {
+      color: $white;
+      background-color: darken($form-report-app-cancel2, 10%);
+      border-color: darken($form-report-app-cancel2, 10%);
+    }
+    &:active {
+      color: $white;
+      background-color: darken($form-report-app-cancel2, 15%);
+      border-color: darken($form-report-app-cancel2, 15%);
+    }
+    &:disabled,
+    &.disabled {
+      color: $white;
+      background-color: $form-report-app-cancel2-disabled;
+      border-color: $form-report-app-cancel2-disabled;
     }
   }
 
