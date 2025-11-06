@@ -104,6 +104,13 @@ $question-lvl-border-colors: map-merge(
             border-bottom: 4px solid $primary;
             transition: padding, border-width 150ms ease-in;
           }
+          &:disabled {
+            padding-top: 0;
+            padding-bottom: 0 !important;
+            border-bottom: none !important;
+            color: $gray-600;
+            opacity: .75;
+          }
         }
       }
       &.text-center {
@@ -123,12 +130,29 @@ $question-lvl-border-colors: map-merge(
           }
         }
       }
-      &.leaf-node:not(.deleting) {
+      &.leaf-node:not(.deleting, .question-hide) {
         > .question-cell {
-          color: $black !important;
-          background-color: $white !important;
+          color: $black;
+          background-color: $white;
           .modify-tool > .btn {
-            color: $black !important;
+            color: $black;
+          }
+        }
+      }
+      &.question-hide {
+        > .question-cell {
+          color: $gray-600 !important;
+          background-color: $gray-400 !important;
+          .modify-tool > .btn {
+            color: $gray-600 !important;
+          }
+          i.is-required-icon {
+            color: $gray-600 !important;
+          }
+        }
+        &.leaf-node {
+          > .question-cell {
+            background-color: $gray-200 !important;
           }
         }
       }
@@ -139,6 +163,15 @@ $question-lvl-border-colors: map-merge(
         background-color: $color;
         > .question-cell {
           background-color: $color;
+        }
+        &.question-set {
+          > .question-cell {
+            color: $black;
+            background-color: $gray-300;
+            .modify-tool > .btn:not([data-toggle="collapse"]) {
+              color: $black;
+            }
+          }
         }
       }
     }
@@ -155,6 +188,12 @@ $question-lvl-border-colors: map-merge(
     @each $lvl, $color in $question-lvl-border-colors {
       .question-lvl-#{$lvl}:not(:last-child) {
         border-bottom: 1px solid $color;
+        &.question-hide {
+          border-bottom: 1px solid darken($gray-400, 15%);
+        }
+        &.question-set {
+          border-bottom: 1px solid darken($gray-300, 15%);
+        }
       }
     }
   }

@@ -1,5 +1,16 @@
 # [AdminLTE - Bootstrap 4 Admin Dashboard](https://adminlte.io)
 
+Project cannot change from node-sass, install an older Node.js version:
+You can manage multiple versions using nvm (Node Version Manager):
+```bash
+nvm install 16.20.2
+nvm use 16.20.2
+```
+Then run:
+```bash
+npm rebuild node-sass
+```
+
 [![npm version](https://img.shields.io/npm/v/admin-lte/latest.svg)](https://www.npmjs.com/package/admin-lte)
 [![Packagist](https://img.shields.io/packagist/v/almasaeed2010/adminlte.svg)](https://packagist.org/packages/almasaeed2010/adminlte)
 [![cdn version](https://data.jsdelivr.com/v1/package/npm/admin-lte/badge)](https://www.jsdelivr.com/package/npm/admin-lte)
